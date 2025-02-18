@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Crystal Lin Zhang</title>
+    <link>http://localhost:1313/content/</link>
+    <description>Recent content in Home on Crystal Lin Zhang</description>
+    <generator>Hugo</generator>
+    <language>en-CA</language>
+    <copyright>Copyright © 2025, Crystal Lin Zhang.</copyright>
+    <atom:link href="http://localhost:1313/content/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books</title>
+      <link>http://localhost:1313/content/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content/books/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Last updated 02/18/2025.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;strong&gt;Currently reading:&lt;/strong&gt; &lt;em&gt;Toward a Feminist Theory of the State&lt;/em&gt;, Catharine MacKinnon.&lt;/p&gt;&#xA;&lt;h3 id=&#34;2025&#34;&gt;2025:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;em&gt;Behind the Beautiful Forevers&lt;/em&gt;, Katherine Boo&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;The Price of Salt&lt;/em&gt;, Patricia Highsmith&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Medea&lt;/em&gt;, Rachel Cusk&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Fight Club&lt;/em&gt;, Chuck Palahniuk&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2024&#34;&gt;2024:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;em&gt;Uncanny Valley&lt;/em&gt;, Anna Weiner&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Fear and Loathing in Las Vegas&lt;/em&gt;, Hunter S. Thompson&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Bad Behaviour&lt;/em&gt;, Mary Gaitskill&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;The Wayward Bus&lt;/em&gt;, John Steinbeck&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Lolita&lt;/em&gt;, Vladimir Nabokov&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Delta of Venus&lt;/em&gt;, Anais Nin&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Autobiography of Red&lt;/em&gt;, Anne Carson&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Intermezzo&lt;/em&gt;, Sally Rooney&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;The Lying Life of Adults&lt;/em&gt;, Elena Ferrante&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Midnight in the Garden of Good and Evil&lt;/em&gt;, John Berendt&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/content/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/content/hugo/</guid>
+      <description>&lt;h1 id=&#34;hugo&#34;&gt;Hugo&lt;/h1&gt;&#xA;&lt;p&gt;Website: &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Written in Go, Hugo is an open-source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML, and JSON data file types, Markdown and HTML content files, and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification, and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single-page applications, or even a website with thousands of pages.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
