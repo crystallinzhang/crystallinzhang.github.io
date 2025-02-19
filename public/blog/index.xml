@@ -7,6 +7,14 @@
     <generator>Hugo</generator>
     <language>en-CA</language>
     <copyright>Copyright © 2025, Crystal Lin Zhang.</copyright>
+    <lastBuildDate>Wed, 19 Feb 2025 01:44:58 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Quick Introduction to the WELLBY</title>
+      <link>http://localhost:1313/a-quick-introduction-to-the-wellby/</link>
+      <pubDate>Wed, 19 Feb 2025 01:44:58 -0800</pubDate>
+      <guid>http://localhost:1313/a-quick-introduction-to-the-wellby/</guid>
+      <description>&lt;p&gt;I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.&lt;/p&gt;&#xA;&lt;p&gt;All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

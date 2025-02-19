@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/faviconreal.png" />
+<title>A Quick Introduction to the WELLBY | Crystal Lin Zhang</title>
+<meta name="title" content="A Quick Introduction to the WELLBY" />
+<meta name="description" content="I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.
+All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="http://localhost:1313/a-quick-introduction-to-the-wellby/">
+  <meta property="og:site_name" content="Crystal Lin Zhang">
+  <meta property="og:title" content="A Quick Introduction to the WELLBY">
+  <meta property="og:description" content="I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.
+All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius.">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-02-19T01:44:58-08:00">
+    <meta property="article:modified_time" content="2025-02-19T01:44:58-08:00">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="A Quick Introduction to the WELLBY">
+  <meta name="twitter:description" content="I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.
+All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius.">
+
+
+
+
+  <meta itemprop="name" content="A Quick Introduction to the WELLBY">
+  <meta itemprop="description" content="I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.
+All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius.">
+  <meta itemprop="datePublished" content="2025-02-19T01:44:58-08:00">
+  <meta itemprop="dateModified" content="2025-02-19T01:44:58-08:00">
+  <meta itemprop="wordCount" content="1384">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+      --width: 800px;
+      --font-main: Helvetica, sans-serif;
+      --font-secondary: Helvetica, sans-serif;
+      --font-scale: 1em;
+      --background-color: #f8f8f4;
+      --heading-color: #1d2620;
+      --text-color: #46423f;
+      --link-color: #2a8963;
+      --visited-color:  #297072;
+      --code-background-color: #f2f2f2;
+      --code-color: #222;
+      --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+      :root {
+          --background-color: #191918;
+          --heading-color: #c0ccbe;
+          --text-color: #d3d3d3;
+          --link-color: #7aad97;
+          --visited-color:  #76b1ac;
+          --code-background-color: #777;
+          --code-color: #ddd;
+          --blockquote-color: #ccc;
+      }
+  }
+
+  body {
+      font-family: var(--font-secondary);
+      font-size: var(--font-scale);
+      margin: auto;
+      padding: 20px;
+      max-width: var(--width);
+      text-align: left;
+      background-color: var(--background-color);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.5;
+      color: var(--text-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-main);
+      color: var(--heading-color);
+  }
+
+  a {
+      color: var(--link-color);
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline; 
+  }
+
+  nav a {
+      margin-right: 8px;
+  }
+
+  strong, b {
+      color: var(--heading-color);
+  }
+
+  button {
+      margin: 0;
+      cursor: pointer;
+  }
+
+  main {
+      line-height: 1.6;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  hr {
+      border: 0;
+      border-top: 1px dashed;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  code {
+      font-family: monospace;
+      padding: 2px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+  }
+
+  blockquote {
+      border-left: 1px solid #999;
+      color: var(--code-color);
+      padding-left: 20px;
+      font-style: italic;
+  }
+
+  footer {
+      padding: 15px 0;
+      text-align: center;
+  }
+
+  .title:hover {
+      text-decoration: none;
+  }
+
+  .title h1 {
+      font-size: 1.5em;
+  }
+
+  .inline {
+      width: auto !important;
+  }
+
+  .highlight, .code {
+      padding: 1px 15px;
+      background-color: var(--code-background-color);
+      color: var(--code-color);
+      border-radius: 3px;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      overflow-x: auto;
+  }
+
+   
+  ul.blog-posts {
+      list-style-type: none;
+      padding: unset;
+  }
+
+  ul.blog-posts li {
+      display: flex;
+  }
+
+  ul.blog-posts li span {
+      flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+      color: var(--visited-color);
+  }
+   
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sparkle-logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.4s ease;
+    fill: var(--heading-color);  
+}
+
+.sparkle-logo:hover {
+    transform: rotate(360deg);
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <svg class="sparkle-logo" viewBox="0 0 24 24">
+    <path d="M12 2L14.4 9.2L22 12L14.4 14.8L12 22L9.6 14.8L2 12L9.6 9.2L12 2Z M5 5L6 8L9 9L6 10L5 13L4 10L1 9L4 8L5 5Z M19 15L20 18L23 19L20 20L19 23L18 20L15 19L18 18L19 15Z"/>
+  </svg>
+  <h2>Crystal Lin Zhang</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/reading">Reading</a>
+
+
+<a href="/blog">Blog</a>
+</nav></header>
+  <main>
+
+<h1>A Quick Introduction to the WELLBY</h1>
+<p>
+  <i>
+    <time datetime='2025-02-19'>
+      19 Feb, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I was an intern at the Effective Institutions Project this past summer. A large part of my work was building a framework to evaluate institution decision-making. The blog post that follows is an exploration of quantitative measures of subjective wellbeing, and the problems that ensue.</p>
+<p>All opinions are mine and do not reflect the opinions of past/present/future employers. I preface this post by saying that I’m a second-year undergrad, I’m still learning introductory econometrics, etcetera, so all mistakes should be ignored while all correct analyses should be taken as proof of my budding genius.</p>
+<h2 id="introduction-of-the-wellby">Introduction of the WELLBY</h2>
+<p>Charities and governments want to create good and reduce bads. But “good” is difficult: what is good for me may be bad for you, and vice versa. Moreover, resources are limited: which bads are most important to reduce? Altruistically inclined institutions lack a standard unit measure for good and bad, harming decision making and evaluation. (Compare this to businesses, which have the simple dollar as a performance indicator.)</p>
+<p>Commonly used measurements of “good” include GDP and QALYs (quality-adjusted life-years).  These are insufficient: income and health aren’t good in and of themselves; they are good because they improve personal wellbeing. GDP and QALY measures ignore the assortment of benefits people gain from non-health and non-income determinants. For example, one’s friendships, romantic partner, and career satisfaction are all deeply important to one’s life.</p>
+<p>The organization I interned with used subjective wellbeing measured through the WELLBY, a wellbeing-adjusted life-year. Subjective wellbeing captures more than happiness; it contains the broad scope of how one feels about one’s life. We looked at wellbeing determinants, interventions done by institutions and then evaluated the potential impact of each institution’s decisions.</p>
+<h3 id="why-subjective-wellbeing">Why subjective wellbeing?</h3>
+<p>There are three main theories of wellbeing: hedonism, desire fulfillment, and objective list. Hedonism evaluates the balance of pleasure and pain. What is good for someone is what is good to someone. Desire theory evaluates the fulfillment of one’s aims. The path to achieving a goal is often unpleasurable or irrelevant. For instance, I desire to bench one plate, not to have the experience of benching one plate. Objective list theory provides a list of items that constitute well-being or the good life. This list consists of experiences that are not simply pleasurable or desirable, but good nonetheless: things like knowledge, moral accountability, and the like.</p>
+<p>There are numerous critiques and responses to each of these theories. I’ll leave those for the reader to explore. What’s relevant for this piece is that subjective wellbeing surveys leave understandings of wellbeing to the individual: it captures subjective preferences and aggregates these to some understandable mean.</p>
+<h3 id="why-institutions">Why institutions?</h3>
+<p>There are many levels at which wellbeing interventions can be evaluated. At the policy level: are direct cash transfers actually useful? At the operational level: are these cash transfers being done efficiently? Lastly, at the institutional level: are the right institutions taking on cash transfer projects?</p>
+<p>I find evaluating institutions most interesting. Institutions mobilize massive amounts of capital and labour each day. Altruism is not knowledge constrained— it is more often power constrained. We know that Vitamin A deficiencies kill; the question is whether the right global actors are taking micronutrient supplementation seriously, and whether outside actors have the power to influence these major global actors.</p>
+<p>I think this is a more complete approach to charity evaluations and philanthropy research.</p>
+<h2 id="finding-data">Finding data</h2>
+<p>The Gallup World Poll provides the most comprehensive source of wellbeing data. Its main life evaluation question is as follows:</p>
+<blockquote>
+<p>Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. The top of the ladder represents the best possible life for you, and the bottom of the ladder represents the worst possible life for you. On which step of the ladder would you say you personally feel you stand at this time?</p></blockquote>
+<p>This is also known as the Cantril scale. Anyone taking ECO220 at the University of Toronto is probably familiar with this self-reported happiness scale.</p>
+<p>Self-reported wellbeing scores are valuable because they capture valence and preference differences. For instance, my lived experience of a skinned knee is different from yours, and my theory of wellbeing is also likely different from yours. We live in epistemic and moral uncertainty: this necessitates giving weight to others’ experiences and preferences, including those we think are incorrect.</p>
+<p>One drawback is that respondents must be able to communicate their life satisfaction to have their wellbeing captured. This can exclude a large audience– animals, young children, extremely disabled people, etcetera– from this evaluative wellbeing method. This doesn’t mean we should ignore WELLBYs as a metric, just that we should be aware of its constraints. Bob Fischer at Rethink Priorities has lots of work on animal welfare ranges and moral weights; there is lots of active research here.</p>
+<p>Another thing to note is that the Likert scale is ordinal; response categories definitely have a rank order, but it’s unclear whether the scale is cardinal or linear. In other words, it’s unclear if eg. an increase in subjective wellbeing ratings from 2 to 3 worth the same as an increase from 7-8. Still, many organizations treat life satisfaction measures as if they were interval data. For example, summing WELLBYs incurred from a natural disaster by multiplying the number of people injured by the WELLBYs associated with said injuries. This bodes problematic if the scale is non-linear.</p>
+<h3 id="defining-parameters-for-evaluation">Defining parameters for evaluation</h3>
+<p>There are a couple different ways of calculating WELLBY impacts from an institution’s decisions. We can look at the expected value, the difference between the best and worst case scenarios, the regret minimizing scenario&hellip; there are many decision-making models.</p>
+<p>I&rsquo;ll walk through the best-worst case situation to demonstrate some of the difficulties making a WELLBY model. First, how do we define our best and worst case– is the best and worst case something that the institution does, or avoids doing? In other words: is there an act-omission distinction? Weakly I think the answer is sometimes. For instance, the FDA has a special obligation to the health of Americans. Not circulating warnings about E. coli in cabbage is a clear violation of their mandate which they ought to maintain, ergo their worst case harms should include harms from inaction. But its less clear in most case. Take the Bretton Woods institutions– should the World Bank be held responsible for not investing in climate finance 20 years ago? Its mandate is to reduce global poverty and climate change has clearly accelerated global poverty. But there are dozens of other institutions that serve similar enough purposes: does the World Bank then have a unique special obligation? When responsibilities are diffuse, its hard to define best and worst cases.</p>
+<p>Even further: how do we define harm? Should we consider harms on future populations, for instance future children displaced by climate-change related flooding? This is a manifestation of the non-identity problem. If we define harm as something that makes another materially worse off than they were before, the affected needs to have some sort of state before, and we need to see a continuity of self. But if we define harm this way, it seems that climate change is perfectly fine for those born in 200 years to regular natural disasters, because they did not exist before. That seems obviously wrong; the future is path dependent and surely</p>
+<p>Defining harm to be something that makes a potentially existent being worse off than their potential counterfactual is also dubious. We’d conclude that legalizing abortion results in near-infinite harms. Surely there must be a time horizon for harm and being? I don&rsquo;t know; I am not a philosopher; I would appreciate direction here. I simply propose that anyone using WELLBYs should clearly define their parameters and stay consistent with them. This is insufficient but it is what I have so far.</p>
+<h2 id="concluding-note">Concluding note</h2>
+<p>I am a fan of WELLBYs as a non-financial KPIs. Like all models, WELLBYs are a flawed model of wellbeing, but all models are wrong; some are useful. I think WELLBYs can be very useful for quantitatively answering questions related to philanthropy.</p>
+<p>And I am very grateful for all the EIPeople I worked with and learned from this summer. I’d like to stay up to date on wellbeing economics research, so please share articles you find interesting!</p>
+
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer><footer>
+    <div>
+      <a href="https://x.com/zhang_png">Twitter</a> |
+      <a href="mailto:&#108;&#105;&#110;&#99;&#114;&#121;&#115;&#116;&#97;&#108;&#46;&#122;&#104;&#97;&#110;&#103;&#64;&#109;&#97;&#105;&#108;&#46;&#117;&#116;&#111;&#114;&#111;&#110;&#116;&#111;&#46;&#99;&#97;">Email</a> |
+      <a href="https://linkedin.com/in/crystalzhang05">LinkedIn</a> |
+      <a href="https://crystalzhang.substack.com">Substack</a>
+    </div>
+    
+    <small>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a></small>
+    
+  </footer></footer>
+
+    
+</body>
+
+</html>
