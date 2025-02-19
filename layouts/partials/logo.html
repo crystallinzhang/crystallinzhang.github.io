@@ -1,0 +1,21 @@
+<style>
+    .sparkle-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+    .sparkle-logo:hover {
+      transform: rotate(180deg);
+      animation: twinkle 1s infinite;
+    }
+    @keyframes twinkle {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+  </style>
+  
+  <svg class="sparkle-logo" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z"/>
+  </svg>

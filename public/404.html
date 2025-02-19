@@ -39,14 +39,14 @@
   <style>
   :root {
       --width: 800px;
-      --font-main: Verdana, sans-serif;
-      --font-secondary: Verdana, sans-serif;
+      --font-main: Helvetica, sans-serif;
+      --font-secondary: Helvetica, sans-serif;
       --font-scale: 1em;
-      --background-color: #fff;
-      --heading-color: #222;
-      --text-color: #444;
-      --link-color: #3273dc;
-      --visited-color:  #8b6fcb;
+      --background-color: #f8f8f4;
+      --heading-color: #1d2620;
+      --text-color: #46423f;
+      --link-color: #2a8a64;
+      --visited-color:  #297072;
       --code-background-color: #f2f2f2;
       --code-color: #222;
       --blockquote-color: #222;
@@ -54,11 +54,11 @@
 
   @media (prefers-color-scheme: dark) {
       :root {
-          --background-color: #333;
-          --heading-color: #eee;
-          --text-color: #ddd;
-          --link-color: #8cc2dd;
-          --visited-color:  #8b6fcb;
+          --background-color: #191918;
+          --heading-color: #c0ccbe;
+          --text-color: #d3d3d3;
+          --link-color: #7aad97;
+          --visited-color:  #76b1ac;
           --code-background-color: #777;
           --code-color: #ddd;
           --blockquote-color: #ccc;
@@ -183,23 +183,50 @@
   ul.blog-posts li a:visited {
       color: var(--visited-color);
   }
+   
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sparkle-logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.4s ease;
+    fill: var(--heading-color);  
+}
+
+.sparkle-logo:hover {
+    transform: rotate(360deg);
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
 </style>
 
 </head>
 
 <body>
   <header><a href="/" class="title">
+  <svg class="sparkle-logo" viewBox="0 0 24 24">
+    <path d="M12 2L14.4 9.2L22 12L14.4 14.8L12 22L9.6 14.8L2 12L9.6 9.2L12 2Z M5 5L6 8L9 9L6 10L5 13L4 10L1 9L4 8L5 5Z M19 15L20 18L23 19L20 20L19 23L18 20L15 19L18 18L19 15Z"/>
+  </svg>
   <h2>Crystal Lin Zhang</h2>
 </a>
 <nav><a href="/">Home</a>
 
 
-<a href="/blog">Blog</a>
-
-
 <a href="/reading">Reading</a>
-</nav>
-</header>
+
+
+<a href="/blog">Blog</a>
+</nav></header>
   <main>
 <h1>404</h1>
 <h2>ʕノ•ᴥ•ʔノ ︵ ┻━┻</h2>
