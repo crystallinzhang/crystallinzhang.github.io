@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_40784282ba67dcff477492df3e6ababd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Crystal's 2024 Ontario Public Transit Travel Map</b></h3>
+             
+    
+            <div class="folium-map" id="map_40784282ba67dcff477492df3e6ababd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_40784282ba67dcff477492df3e6ababd = L.map(
+                "map_40784282ba67dcff477492df3e6ababd",
+                {
+                    center: [43.65, -79.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_721c00191eb1d14e95676a3692a50d86 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_721c00191eb1d14e95676a3692a50d86.addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+            var circle_marker_95f5dd159a8b5fab32ffd2975f6c508b = L.circleMarker(
+                [43.6452, -79.3803],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_08586d4ed2e1c5b1fdc8e1bf61482277 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8817f896b0408e25141927c719493fd9 = $(`<div id="html_8817f896b0408e25141927c719493fd9" style="width: 100.0%; height: 100.0%;">Location: Union Station Rail, Frequency: 41</div>`)[0];
+                popup_08586d4ed2e1c5b1fdc8e1bf61482277.setContent(html_8817f896b0408e25141927c719493fd9);
+            
+        
+
+        circle_marker_95f5dd159a8b5fab32ffd2975f6c508b.bindPopup(popup_08586d4ed2e1c5b1fdc8e1bf61482277)
+        ;
+
+        
+    
+    
+            var circle_marker_e2db5b97b30b6ab07818a5ce327cad6b = L.circleMarker(
+                [43.6565, -79.4081],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_ef03bebcafded2397d0ba97e196b16ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdb31fb223a43b4f1534def45c9ab4dd = $(`<div id="html_fdb31fb223a43b4f1534def45c9ab4dd" style="width: 100.0%; height: 100.0%;">Location: College St At Bathurst St, Frequency: 1</div>`)[0];
+                popup_ef03bebcafded2397d0ba97e196b16ff.setContent(html_fdb31fb223a43b4f1534def45c9ab4dd);
+            
+        
+
+        circle_marker_e2db5b97b30b6ab07818a5ce327cad6b.bindPopup(popup_ef03bebcafded2397d0ba97e196b16ff)
+        ;
+
+        
+    
+    
+            var circle_marker_33b0e73aa1f08a8c2d32d7c0bcfcc619 = L.circleMarker(
+                [43.5122, -79.6347],
+                {"bubblingMouseEvents": true, "color": "#06008aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#06008aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_5bbea6f29072f53346f738e75148bfbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62c93ef75fc035c0f45807c7118b117b = $(`<div id="html_62c93ef75fc035c0f45807c7118b117b" style="width: 100.0%; height: 100.0%;">Location: Clarkson GO Station Rail, Frequency: 39</div>`)[0];
+                popup_5bbea6f29072f53346f738e75148bfbe.setContent(html_62c93ef75fc035c0f45807c7118b117b);
+            
+        
+
+        circle_marker_33b0e73aa1f08a8c2d32d7c0bcfcc619.bindPopup(popup_5bbea6f29072f53346f738e75148bfbe)
+        ;
+
+        
+    
+    
+            var circle_marker_e2257f6943bb34582efeb31753022368 = L.circleMarker(
+                [43.6597, -79.3903],
+                {"bubblingMouseEvents": true, "color": "#590083ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#590083ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_62e5cadaf16b334dd347a32d92c97db3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec9cf8abc38cbd92f3b3d6a4cfcd71d1 = $(`<div id="html_ec9cf8abc38cbd92f3b3d6a4cfcd71d1" style="width: 100.0%; height: 100.0%;">Location: QUEENS PARK STATION, Frequency: 13</div>`)[0];
+                popup_62e5cadaf16b334dd347a32d92c97db3.setContent(html_ec9cf8abc38cbd92f3b3d6a4cfcd71d1);
+            
+        
+
+        circle_marker_e2257f6943bb34582efeb31753022368.bindPopup(popup_62e5cadaf16b334dd347a32d92c97db3)
+        ;
+
+        
+    
+    
+            var circle_marker_3f1fb2bb2b92c52f623b5fab9259dd65 = L.circleMarker(
+                [43.6817, -79.3906],
+                {"bubblingMouseEvents": true, "color": "#660082ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#660082ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_4a54d4f1fe21417898e9c6a1207cfec2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7800073a9bb336d38f06b78f648f9116 = $(`<div id="html_7800073a9bb336d38f06b78f648f9116" style="width: 100.0%; height: 100.0%;">Location: SUMMERHILL STATION, Frequency: 9</div>`)[0];
+                popup_4a54d4f1fe21417898e9c6a1207cfec2.setContent(html_7800073a9bb336d38f06b78f648f9116);
+            
+        
+
+        circle_marker_3f1fb2bb2b92c52f623b5fab9259dd65.bindPopup(popup_4a54d4f1fe21417898e9c6a1207cfec2)
+        ;
+
+        
+    
+    
+            var circle_marker_a5079cbab115b095b122c8a0a82c3a6d = L.circleMarker(
+                [43.6683, -79.3989],
+                {"bubblingMouseEvents": true, "color": "#3d0086ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3d0086ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_2a1265b81cb04de530df82d83ca1932c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c04a3b6409242d50ef10bbb8e597097 = $(`<div id="html_9c04a3b6409242d50ef10bbb8e597097" style="width: 100.0%; height: 100.0%;">Location: ST GEORGE STATION, Frequency: 22</div>`)[0];
+                popup_2a1265b81cb04de530df82d83ca1932c.setContent(html_9c04a3b6409242d50ef10bbb8e597097);
+            
+        
+
+        circle_marker_a5079cbab115b095b122c8a0a82c3a6d.bindPopup(popup_2a1265b81cb04de530df82d83ca1932c)
+        ;
+
+        
+    
+    
+            var circle_marker_dbee1dc83b7f9bc85b4b755e341e5ad7 = L.circleMarker(
+                [43.6686, -79.4047],
+                {"bubblingMouseEvents": true, "color": "#7a0081ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7a0081ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_0612d0c9926633175c9556df20deed42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d212cff9176cfb142d16efe25b6fac = $(`<div id="html_85d212cff9176cfb142d16efe25b6fac" style="width: 100.0%; height: 100.0%;">Location: SPADINA STATION, Frequency: 3</div>`)[0];
+                popup_0612d0c9926633175c9556df20deed42.setContent(html_85d212cff9176cfb142d16efe25b6fac);
+            
+        
+
+        circle_marker_dbee1dc83b7f9bc85b4b755e341e5ad7.bindPopup(popup_0612d0c9926633175c9556df20deed42)
+        ;
+
+        
+    
+    
+            var circle_marker_a87e2e7ac92885e1a4989ea5320571d3 = L.circleMarker(
+                [43.6642, -79.4183],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_ce4c6c12c4147ca4835803c48ba2977e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccd60b3eb3261e1a92232aae61ff140a = $(`<div id="html_ccd60b3eb3261e1a92232aae61ff140a" style="width: 100.0%; height: 100.0%;">Location: CHRISTIE STATION, Frequency: 1</div>`)[0];
+                popup_ce4c6c12c4147ca4835803c48ba2977e.setContent(html_ccd60b3eb3261e1a92232aae61ff140a);
+            
+        
+
+        circle_marker_a87e2e7ac92885e1a4989ea5320571d3.bindPopup(popup_ce4c6c12c4147ca4835803c48ba2977e)
+        ;
+
+        
+    
+    
+            var circle_marker_2af3b5dd311189a1d7444efb738d16d4 = L.circleMarker(
+                [43.6658, -79.4111],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_fd1fec0f7c6c2ba86345b0cf9f370f0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38d4cc8a59e15b36f81d6073fd6a93fb = $(`<div id="html_38d4cc8a59e15b36f81d6073fd6a93fb" style="width: 100.0%; height: 100.0%;">Location: BATHURST STATION, Frequency: 2</div>`)[0];
+                popup_fd1fec0f7c6c2ba86345b0cf9f370f0b.setContent(html_38d4cc8a59e15b36f81d6073fd6a93fb);
+            
+        
+
+        circle_marker_2af3b5dd311189a1d7444efb738d16d4.bindPopup(popup_fd1fec0f7c6c2ba86345b0cf9f370f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_de6bc32d46b0bb1a169bbb32f448f648 = L.circleMarker(
+                [43.6783, -79.3525],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_65263fa9d6f797e8bccc9c7fb4933f58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81c5219f147b984f839fb4c496d9d59f = $(`<div id="html_81c5219f147b984f839fb4c496d9d59f" style="width: 100.0%; height: 100.0%;">Location: CHESTER STATION, Frequency: 2</div>`)[0];
+                popup_65263fa9d6f797e8bccc9c7fb4933f58.setContent(html_81c5219f147b984f839fb4c496d9d59f);
+            
+        
+
+        circle_marker_de6bc32d46b0bb1a169bbb32f448f648.bindPopup(popup_65263fa9d6f797e8bccc9c7fb4933f58)
+        ;
+
+        
+    
+    
+            var circle_marker_819d803dcbbf3bc1b68207c16af94257 = L.circleMarker(
+                [43.6817, -79.6125],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_34cf87792ab399a112d76c9ab5685506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e601409c81d85f93e25c1740ce6e791 = $(`<div id="html_7e601409c81d85f93e25c1740ce6e791" style="width: 100.0%; height: 100.0%;">Location: Union Pearson Express Pearson Station, Frequency: 1</div>`)[0];
+                popup_34cf87792ab399a112d76c9ab5685506.setContent(html_7e601409c81d85f93e25c1740ce6e791);
+            
+        
+
+        circle_marker_819d803dcbbf3bc1b68207c16af94257.bindPopup(popup_34cf87792ab399a112d76c9ab5685506)
+        ;
+
+        
+    
+    
+            var circle_marker_f866e4b97b93774e1b0fb2d17d46a782 = L.circleMarker(
+                [43.6452, -79.381],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_cb0d467d32d09c45c8a442163a542ec3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b872e114eaa65878c2d0915fef7bd7c1 = $(`<div id="html_b872e114eaa65878c2d0915fef7bd7c1" style="width: 100.0%; height: 100.0%;">Location: Union Pearson Express Union Station, Frequency: 1</div>`)[0];
+                popup_cb0d467d32d09c45c8a442163a542ec3.setContent(html_b872e114eaa65878c2d0915fef7bd7c1);
+            
+        
+
+        circle_marker_f866e4b97b93774e1b0fb2d17d46a782.bindPopup(popup_cb0d467d32d09c45c8a442163a542ec3)
+        ;
+
+        
+    
+    
+            var circle_marker_05f841f69dca201a00e0339c1c56ccef = L.circleMarker(
+                [43.6621, -79.4042],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_56a89eca658c41b644db81f4fa985840 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53cc51628d5f7508d7408464f9ea65d0 = $(`<div id="html_53cc51628d5f7508d7408464f9ea65d0" style="width: 100.0%; height: 100.0%;">Location: Spadina Ave At Harbord St South Side, Frequency: 1</div>`)[0];
+                popup_56a89eca658c41b644db81f4fa985840.setContent(html_53cc51628d5f7508d7408464f9ea65d0);
+            
+        
+
+        circle_marker_05f841f69dca201a00e0339c1c56ccef.bindPopup(popup_56a89eca658c41b644db81f4fa985840)
+        ;
+
+        
+    
+    
+            var circle_marker_68331af01e88db4ef4b691aa76dd5ed3 = L.circleMarker(
+                [43.6606, -79.3828],
+                {"bubblingMouseEvents": true, "color": "#660082ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#660082ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_9252570b35f6b7af42138a58672d332e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_627b0605c052514ab44b942efc8aba86 = $(`<div id="html_627b0605c052514ab44b942efc8aba86" style="width: 100.0%; height: 100.0%;">Location: COLLEGE STATION, Frequency: 9</div>`)[0];
+                popup_9252570b35f6b7af42138a58672d332e.setContent(html_627b0605c052514ab44b942efc8aba86);
+            
+        
+
+        circle_marker_68331af01e88db4ef4b691aa76dd5ed3.bindPopup(popup_9252570b35f6b7af42138a58672d332e)
+        ;
+
+        
+    
+    
+            var circle_marker_64b1de8592dd1bc2195e376c4bf1308d = L.circleMarker(
+                [43.6708, -79.3856],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_80157ad1f497fea3666c3169a6c95e72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f21fa143dd68ea517b6c296bf77e2ab = $(`<div id="html_0f21fa143dd68ea517b6c296bf77e2ab" style="width: 100.0%; height: 100.0%;">Location: BLOOR-YONGE STATION, Frequency: 2</div>`)[0];
+                popup_80157ad1f497fea3666c3169a6c95e72.setContent(html_0f21fa143dd68ea517b6c296bf77e2ab);
+            
+        
+
+        circle_marker_64b1de8592dd1bc2195e376c4bf1308d.bindPopup(popup_80157ad1f497fea3666c3169a6c95e72)
+        ;
+
+        
+    
+    
+            var circle_marker_5d8378c8e5ee57f5afc4215b0fce5f4d = L.circleMarker(
+                [43.6673, -79.3948],
+                {"bubblingMouseEvents": true, "color": "#6d0082ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0082ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_062f94c9d67c47eab09bd1dc2e716a78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8352b742c9ed8b201c5850a41491c3e3 = $(`<div id="html_8352b742c9ed8b201c5850a41491c3e3" style="width: 100.0%; height: 100.0%;">Location: MUSEUM STATION, Frequency: 7</div>`)[0];
+                popup_062f94c9d67c47eab09bd1dc2e716a78.setContent(html_8352b742c9ed8b201c5850a41491c3e3);
+            
+        
+
+        circle_marker_5d8378c8e5ee57f5afc4215b0fce5f4d.bindPopup(popup_062f94c9d67c47eab09bd1dc2e716a78)
+        ;
+
+        
+    
+    
+            var circle_marker_ec94ea957cc9d6d926b29cb4ce8c3363 = L.circleMarker(
+                [43.6507, -79.3865],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_d50f674518802320fd55e9e314d9eb2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14e3616b85bc1be203a798f0f62f5e77 = $(`<div id="html_14e3616b85bc1be203a798f0f62f5e77" style="width: 100.0%; height: 100.0%;">Location: OSGOODE STATION, Frequency: 2</div>`)[0];
+                popup_d50f674518802320fd55e9e314d9eb2d.setContent(html_14e3616b85bc1be203a798f0f62f5e77);
+            
+        
+
+        circle_marker_ec94ea957cc9d6d926b29cb4ce8c3363.bindPopup(popup_d50f674518802320fd55e9e314d9eb2d)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca7bc4cd16356a0fe5872c4d90cf7e5 = L.circleMarker(
+                [43.5489, -79.586],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_aaa3b4b423d0cc98b1b286747a3d5af9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c315e568119808a8dcabe627c6848ec = $(`<div id="html_1c315e568119808a8dcabe627c6848ec" style="width: 100.0%; height: 100.0%;">Location: Port Credit GO Station Rail, Frequency: 2</div>`)[0];
+                popup_aaa3b4b423d0cc98b1b286747a3d5af9.setContent(html_1c315e568119808a8dcabe627c6848ec);
+            
+        
+
+        circle_marker_0ca7bc4cd16356a0fe5872c4d90cf7e5.bindPopup(popup_aaa3b4b423d0cc98b1b286747a3d5af9)
+        ;
+
+        
+    
+    
+            var circle_marker_dd2df4f45b268fefb15c293e925380d4 = L.circleMarker(
+                [43.6564, -79.3802],
+                {"bubblingMouseEvents": true, "color": "#700081ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#700081ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_1db5072e74f06a4a2e271f496e54c484 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4573cf546113e29a048de759caf78378 = $(`<div id="html_4573cf546113e29a048de759caf78378" style="width: 100.0%; height: 100.0%;">Location: DUNDAS STATION, Frequency: 6</div>`)[0];
+                popup_1db5072e74f06a4a2e271f496e54c484.setContent(html_4573cf546113e29a048de759caf78378);
+            
+        
+
+        circle_marker_dd2df4f45b268fefb15c293e925380d4.bindPopup(popup_1db5072e74f06a4a2e271f496e54c484)
+        ;
+
+        
+    
+    
+            var circle_marker_2f0f2a6f5cd04e55d8cd7654f8a6e781 = L.circleMarker(
+                [43.6561, -79.459],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_0b6f5b8ab53f0176e18ea919adb67cd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_817f79aad9b9ad4141477ec56b3ce075 = $(`<div id="html_817f79aad9b9ad4141477ec56b3ce075" style="width: 100.0%; height: 100.0%;">Location: KEELE STATION, Frequency: 1</div>`)[0];
+                popup_0b6f5b8ab53f0176e18ea919adb67cd7.setContent(html_817f79aad9b9ad4141477ec56b3ce075);
+            
+        
+
+        circle_marker_2f0f2a6f5cd04e55d8cd7654f8a6e781.bindPopup(popup_0b6f5b8ab53f0176e18ea919adb67cd7)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f77c0e163e2f84e014e3ca634aabfb = L.circleMarker(
+                [43.665, -79.3838],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_4d3fb4fea0b1e56df451fb29cc3d1d62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a3c291fcd479291c8d64d3966f5becf = $(`<div id="html_8a3c291fcd479291c8d64d3966f5becf" style="width: 100.0%; height: 100.0%;">Location: WELLESLEY STATION, Frequency: 2</div>`)[0];
+                popup_4d3fb4fea0b1e56df451fb29cc3d1d62.setContent(html_8a3c291fcd479291c8d64d3966f5becf);
+            
+        
+
+        circle_marker_c5f77c0e163e2f84e014e3ca634aabfb.bindPopup(popup_4d3fb4fea0b1e56df451fb29cc3d1d62)
+        ;
+
+        
+    
+    
+            var circle_marker_566fd5b72469db9f38a534922c4cbce1 = L.circleMarker(
+                [43.6769, -79.3582],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_5eed175d9163ec1f23fcb36a364acabd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c303cf6adca4a51d90fde64a174a295 = $(`<div id="html_3c303cf6adca4a51d90fde64a174a295" style="width: 100.0%; height: 100.0%;">Location: Broadview Station, Frequency: 1</div>`)[0];
+                popup_5eed175d9163ec1f23fcb36a364acabd.setContent(html_3c303cf6adca4a51d90fde64a174a295);
+            
+        
+
+        circle_marker_566fd5b72469db9f38a534922c4cbce1.bindPopup(popup_5eed175d9163ec1f23fcb36a364acabd)
+        ;
+
+        
+    
+    
+            var circle_marker_2a6ca1c91f4e140ebe83d7e317d85f94 = L.circleMarker(
+                [43.6476, -79.3962],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_64c3320254129777759d30da55286dbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ff92766d99fb03a417be4a8baa141fd = $(`<div id="html_0ff92766d99fb03a417be4a8baa141fd" style="width: 100.0%; height: 100.0%;">Location: Queen St West At Spadina Ave, Frequency: 1</div>`)[0];
+                popup_64c3320254129777759d30da55286dbb.setContent(html_0ff92766d99fb03a417be4a8baa141fd);
+            
+        
+
+        circle_marker_2a6ca1c91f4e140ebe83d7e317d85f94.bindPopup(popup_64c3320254129777759d30da55286dbb)
+        ;
+
+        
+    
+    
+            var circle_marker_8eec297b58453d024c1d6dcee790cd7b = L.circleMarker(
+                [43.6476, -79.3848],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_7044c51465dd0f32cf63c4cfa9a8ba7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ee245cfcaf6dc17b15a4462febeff0b = $(`<div id="html_0ee245cfcaf6dc17b15a4462febeff0b" style="width: 100.0%; height: 100.0%;">Location: ST ANDREW STATION, Frequency: 2</div>`)[0];
+                popup_7044c51465dd0f32cf63c4cfa9a8ba7f.setContent(html_0ee245cfcaf6dc17b15a4462febeff0b);
+            
+        
+
+        circle_marker_8eec297b58453d024c1d6dcee790cd7b.bindPopup(popup_7044c51465dd0f32cf63c4cfa9a8ba7f)
+        ;
+
+        
+    
+    
+            var circle_marker_0400e2b3d6ac18257933acf560781f5a = L.circleMarker(
+                [43.548, -79.682],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_8da8de02ad948d3cf2a64b913f8aa869 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffeb931c9c4d1445c04037c59604c8f9 = $(`<div id="html_ffeb931c9c4d1445c04037c59604c8f9" style="width: 100.0%; height: 100.0%;">Location: Miss- Erin Mills Transitway Station at, Frequency: 2</div>`)[0];
+                popup_8da8de02ad948d3cf2a64b913f8aa869.setContent(html_ffeb931c9c4d1445c04037c59604c8f9);
+            
+        
+
+        circle_marker_0400e2b3d6ac18257933acf560781f5a.bindPopup(popup_8da8de02ad948d3cf2a64b913f8aa869)
+        ;
+
+        
+    
+    
+            var circle_marker_534f1e084c3da80c8e5af87e795d4ce2 = L.circleMarker(
+                [43.5312, -80.226],
+                {"bubblingMouseEvents": true, "color": "#7d0080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d0080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_2e31dddd844aaf7aa19c828cb6663c1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41b75eee3f6352299b525acf1d09be88 = $(`<div id="html_41b75eee3f6352299b525acf1d09be88" style="width: 100.0%; height: 100.0%;">Location: University Of Guelph -  At, Frequency: 2</div>`)[0];
+                popup_2e31dddd844aaf7aa19c828cb6663c1a.setContent(html_41b75eee3f6352299b525acf1d09be88);
+            
+        
+
+        circle_marker_534f1e084c3da80c8e5af87e795d4ce2.bindPopup(popup_2e31dddd844aaf7aa19c828cb6663c1a)
+        ;
+
+        
+    
+    
+            var circle_marker_265a84b1ea594c7d4c6ac9981c573ade = L.circleMarker(
+                [43.6565, -79.4],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_b8a0db1b11617bdd9f557fad5d506292 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f51a55b29e0d27912f500e082543ad18 = $(`<div id="html_f51a55b29e0d27912f500e082543ad18" style="width: 100.0%; height: 100.0%;">Location: College St At St George St, Frequency: 1</div>`)[0];
+                popup_b8a0db1b11617bdd9f557fad5d506292.setContent(html_f51a55b29e0d27912f500e082543ad18);
+            
+        
+
+        circle_marker_265a84b1ea594c7d4c6ac9981c573ade.bindPopup(popup_b8a0db1b11617bdd9f557fad5d506292)
+        ;
+
+        
+    
+    
+            var circle_marker_4257a232a7c9753a51e6233a1c0655d1 = L.circleMarker(
+                [43.5489, -79.586],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_1b2bc9c784da9fc0ecaa22b2c47cf169 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de40038bc96dfecf0360fb572f904e1c = $(`<div id="html_de40038bc96dfecf0360fb572f904e1c" style="width: 100.0%; height: 100.0%;">Location: PORT CREDIT GO STATION PLATFORM 8, Frequency: 1</div>`)[0];
+                popup_1b2bc9c784da9fc0ecaa22b2c47cf169.setContent(html_de40038bc96dfecf0360fb572f904e1c);
+            
+        
+
+        circle_marker_4257a232a7c9753a51e6233a1c0655d1.bindPopup(popup_1b2bc9c784da9fc0ecaa22b2c47cf169)
+        ;
+
+        
+    
+    
+            var circle_marker_b0834330c842dc1f04da8c9a42ea3e42 = L.circleMarker(
+                [43.5267, -79.6129],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_7e83752f1a39e3b27d4b4a0aeee1ab1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d661a22530ddb2806517bd484a33d242 = $(`<div id="html_d661a22530ddb2806517bd484a33d242" style="width: 100.0%; height: 100.0%;">Location: LAKESHORE RD W at FESTAVON CRT, Frequency: 1</div>`)[0];
+                popup_7e83752f1a39e3b27d4b4a0aeee1ab1c.setContent(html_d661a22530ddb2806517bd484a33d242);
+            
+        
+
+        circle_marker_b0834330c842dc1f04da8c9a42ea3e42.bindPopup(popup_7e83752f1a39e3b27d4b4a0aeee1ab1c)
+        ;
+
+        
+    
+    
+            var circle_marker_9a2f7596bc265108d54ea5a87897beb7 = L.circleMarker(
+                [43.5242, -79.6156],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_d7d175990438f32507e0943d36e7df02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb1518e64282642ebd78a9d0a2d94a99 = $(`<div id="html_eb1518e64282642ebd78a9d0a2d94a99" style="width: 100.0%; height: 100.0%;">Location: LAKESHORE RD W at SILVER BIRCH, Frequency: 1</div>`)[0];
+                popup_d7d175990438f32507e0943d36e7df02.setContent(html_eb1518e64282642ebd78a9d0a2d94a99);
+            
+        
+
+        circle_marker_9a2f7596bc265108d54ea5a87897beb7.bindPopup(popup_d7d175990438f32507e0943d36e7df02)
+        ;
+
+        
+    
+    
+            var circle_marker_a67f65deb1949e6bc388b30768c643e1 = L.circleMarker(
+                [43.6644, -79.3986],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_02dd740f7d94c5920f63c5ba9f5bfca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e54a9ccc748ac6af37963842d4c884d6 = $(`<div id="html_e54a9ccc748ac6af37963842d4c884d6" style="width: 100.0%; height: 100.0%;">Location: Hoskin Ave At Tower Rd (Trinity College), Frequency: 1</div>`)[0];
+                popup_02dd740f7d94c5920f63c5ba9f5bfca7.setContent(html_e54a9ccc748ac6af37963842d4c884d6);
+            
+        
+
+        circle_marker_a67f65deb1949e6bc388b30768c643e1.bindPopup(popup_02dd740f7d94c5920f63c5ba9f5bfca7)
+        ;
+
+        
+    
+    
+            var circle_marker_116a707c7d0fbf6965d435b129b618f7 = L.circleMarker(
+                [43.6505, -79.4365],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_6dfe91c1e05fd617ad409d5f9d07ee39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07b0a4cd718d6efa20464f4063ec12b7 = $(`<div id="html_07b0a4cd718d6efa20464f4063ec12b7" style="width: 100.0%; height: 100.0%;">Location: Dundas St West At Brock Ave, Frequency: 1</div>`)[0];
+                popup_6dfe91c1e05fd617ad409d5f9d07ee39.setContent(html_07b0a4cd718d6efa20464f4063ec12b7);
+            
+        
+
+        circle_marker_116a707c7d0fbf6965d435b129b618f7.bindPopup(popup_6dfe91c1e05fd617ad409d5f9d07ee39)
+        ;
+
+        
+    
+    
+            var circle_marker_3ef6737aaee07f6584f7ac47dc7904b7 = L.circleMarker(
+                [43.4715, -80.5449],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_f9bc4ac99de1e062bc8916f948d4cebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_803f83f9c4b156b4977be2ec81bfcfe0 = $(`<div id="html_803f83f9c4b156b4977be2ec81bfcfe0" style="width: 100.0%; height: 100.0%;">Location: Waterloo- University of Waterloo Termi, Frequency: 1</div>`)[0];
+                popup_f9bc4ac99de1e062bc8916f948d4cebd.setContent(html_803f83f9c4b156b4977be2ec81bfcfe0);
+            
+        
+
+        circle_marker_3ef6737aaee07f6584f7ac47dc7904b7.bindPopup(popup_f9bc4ac99de1e062bc8916f948d4cebd)
+        ;
+
+        
+    
+    
+            var circle_marker_de08c494a0b593de8ae8695640826e8c = L.circleMarker(
+                [43.7131, -79.7005],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_67ac56b13a5a0700b72272918101f96e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0610e603d988a1311743e5fb99bac776 = $(`<div id="html_0610e603d988a1311743e5fb99bac776" style="width: 100.0%; height: 100.0%;">Location: Brampton - BramaleaGOStation At Steeles, Frequency: 1</div>`)[0];
+                popup_67ac56b13a5a0700b72272918101f96e.setContent(html_0610e603d988a1311743e5fb99bac776);
+            
+        
+
+        circle_marker_de08c494a0b593de8ae8695640826e8c.bindPopup(popup_67ac56b13a5a0700b72272918101f96e)
+        ;
+
+        
+    
+    
+            var circle_marker_0cd6654696bd368fe9fbbc55f31c308e = L.circleMarker(
+                [43.7131, -79.7005],
+                {"bubblingMouseEvents": true, "color": "#800080ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800080ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_40784282ba67dcff477492df3e6ababd);
+        
+    
+        var popup_0e888d62664a167877241b2a0f8ae01d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fc0b7e9b72e3a3c4d29e811bcb3d20b = $(`<div id="html_3fc0b7e9b72e3a3c4d29e811bcb3d20b" style="width: 100.0%; height: 100.0%;">Location: Bramalea GO Station Rail, Frequency: 1</div>`)[0];
+                popup_0e888d62664a167877241b2a0f8ae01d.setContent(html_3fc0b7e9b72e3a3c4d29e811bcb3d20b);
+            
+        
+
+        circle_marker_0cd6654696bd368fe9fbbc55f31c308e.bindPopup(popup_0e888d62664a167877241b2a0f8ae01d)
+        ;
+
+        
+    
+    
+    var color_map_da24d8ecfbd3dc6577ec73a7d98e3d05 = {};
+
+    
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.color = d3.scale.threshold()
+              .domain([1.0, 1.0801603206412826, 1.160320641282565, 1.2404809619238477, 1.3206412825651301, 1.4008016032064128, 1.4809619238476954, 1.561122244488978, 1.6412825651302605, 1.7214428857715431, 1.8016032064128256, 1.8817635270541082, 1.9619238476953909, 2.0420841683366735, 2.122244488977956, 2.202404809619239, 2.282565130260521, 2.3627254509018036, 2.4428857715430863, 2.5230460921843685, 2.603206412825651, 2.6833667334669338, 2.7635270541082164, 2.843687374749499, 2.9238476953907817, 3.004008016032064, 3.0841683366733466, 3.164328657314629, 3.244488977955912, 3.3246492985971945, 3.404809619238477, 3.4849699398797593, 3.565130260521042, 3.6452905811623246, 3.7254509018036073, 3.80561122244489, 3.8857715430861726, 3.9659318637274548, 4.046092184368737, 4.1262525050100205, 4.206412825651302, 4.286573146292586, 4.3667334669338675, 4.44689378757515, 4.527054108216433, 4.6072144288577155, 4.687374749498998, 4.767535070140281, 4.847695390781563, 4.927855711422845, 5.008016032064128, 5.0881763527054105, 5.168336673346693, 5.248496993987976, 5.328657314629258, 5.408817635270541, 5.488977955911824, 5.569138276553106, 5.649298597194389, 5.729458917835672, 5.809619238476954, 5.889779559118236, 5.969939879759519, 6.050100200400801, 6.130260521042084, 6.210420841683367, 6.290581162324649, 6.370741482965932, 6.4509018036072145, 6.531062124248497, 6.61122244488978, 6.6913827655310625, 6.771543086172345, 6.851703406813627, 6.9318637274549095, 7.012024048096192, 7.092184368737475, 7.1723446893787575, 7.25250501002004, 7.332665330661323, 7.412825651302605, 7.492985971943888, 7.573146292585171, 7.653306613226453, 7.733466933867735, 7.813627254509018, 7.8937875751503, 7.973947895791583, 8.054108216432866, 8.13426853707415, 8.214428857715431, 8.294589178356713, 8.374749498997996, 8.45490981963928, 8.535070140280562, 8.615230460921843, 8.695390781563127, 8.775551102204409, 8.85571142284569, 8.935871743486974, 9.016032064128256, 9.09619238476954, 9.176352705410821, 9.256513026052104, 9.336673346693386, 9.41683366733467, 9.496993987975952, 9.577154308617235, 9.657314629258517, 9.7374749498998, 9.817635270541082, 9.897795591182364, 9.977955911823647, 10.05811623246493, 10.138276553106213, 10.218436873747494, 10.298597194388778, 10.37875751503006, 10.458917835671343, 10.539078156312625, 10.619238476953909, 10.69939879759519, 10.779559118236472, 10.859719438877756, 10.939879759519037, 11.02004008016032, 11.100200400801603, 11.180360721442886, 11.260521042084168, 11.340681362725451, 11.420841683366733, 11.501002004008017, 11.581162324649299, 11.661322645290582, 11.741482965931864, 11.821643286573146, 11.901803607214429, 11.98196392785571, 12.062124248496994, 12.142284569138276, 12.22244488977956, 12.302605210420841, 12.382765531062125, 12.462925851703407, 12.54308617234469, 12.623246492985972, 12.703406813627254, 12.783567134268537, 12.863727454909819, 12.943887775551103, 13.024048096192384, 13.104208416833668, 13.18436873747495, 13.264529058116233, 13.344689378757515, 13.424849699398798, 13.50501002004008, 13.585170340681362, 13.665330661322646, 13.745490981963927, 13.82565130260521, 13.905811623246493, 13.985971943887776, 14.066132264529058, 14.146292585170341, 14.226452905811623, 14.306613226452907, 14.386773547094188, 14.46693386773547, 14.547094188376754, 14.627254509018035, 14.707414829659319, 14.7875751503006, 14.867735470941884, 14.947895791583166, 15.02805611222445, 15.108216432865731, 15.188376753507015, 15.268537074148297, 15.348697394789578, 15.428857715430862, 15.509018036072144, 15.589178356713427, 15.669338677354709, 15.749498997995993, 15.829659318637274, 15.909819639278558, 15.98997995991984, 16.070140280561123, 16.150300601202403, 16.230460921843687, 16.31062124248497, 16.390781563126254, 16.470941883767537, 16.551102204408817, 16.6312625250501, 16.71142284569138, 16.791583166332664, 16.871743486973948, 16.95190380761523, 17.03206412825651, 17.112224448897795, 17.19238476953908, 17.272545090180362, 17.352705410821642, 17.432865731462925, 17.51302605210421, 17.593186372745492, 17.673346693386772, 17.753507014028056, 17.83366733466934, 17.91382765531062, 17.993987975951903, 18.074148296593187, 18.15430861723447, 18.23446893787575, 18.314629258517034, 18.394789579158317, 18.4749498997996, 18.55511022044088, 18.635270541082164, 18.715430861723448, 18.795591182364728, 18.87575150300601, 18.955911823647295, 19.03607214428858, 19.11623246492986, 19.196392785571142, 19.276553106212425, 19.35671342685371, 19.43687374749499, 19.517034068136272, 19.597194388777556, 19.677354709418836, 19.75751503006012, 19.837675350701403, 19.917835671342687, 19.997995991983966, 20.07815631262525, 20.158316633266534, 20.238476953907817, 20.318637274549097, 20.39879759519038, 20.478957915831664, 20.559118236472944, 20.639278557114228, 20.71943887775551, 20.799599198396795, 20.879759519038075, 20.95991983967936, 21.04008016032064, 21.120240480961925, 21.200400801603205, 21.28056112224449, 21.360721442885772, 21.440881763527056, 21.521042084168336, 21.60120240480962, 21.681362725450903, 21.761523046092183, 21.841683366733466, 21.92184368737475, 22.002004008016034, 22.082164328657313, 22.162324649298597, 22.24248496993988, 22.322645290581164, 22.402805611222444, 22.482965931863728, 22.56312625250501, 22.64328657314629, 22.723446893787575, 22.803607214428858, 22.88376753507014, 22.96392785571142, 23.044088176352705, 23.12424849699399, 23.204408817635272, 23.284569138276552, 23.364729458917836, 23.44488977955912, 23.5250501002004, 23.605210420841683, 23.685370741482966, 23.76553106212425, 23.84569138276553, 23.925851703406813, 24.006012024048097, 24.08617234468938, 24.16633266533066, 24.246492985971944, 24.326653306613228, 24.406813627254508, 24.48697394789579, 24.567134268537075, 24.647294589178358, 24.727454909819638, 24.80761523046092, 24.887775551102205, 24.96793587174349, 25.04809619238477, 25.128256513026052, 25.208416833667336, 25.288577154308616, 25.3687374749499, 25.448897795591183, 25.529058116232466, 25.609218436873746, 25.68937875751503, 25.769539078156313, 25.849699398797597, 25.929859719438877, 26.01002004008016, 26.090180360721444, 26.170340681362724, 26.250501002004007, 26.33066132264529, 26.410821643286575, 26.490981963927855, 26.571142284569138, 26.65130260521042, 26.731462925851705, 26.811623246492985, 26.89178356713427, 26.971943887775552, 27.052104208416832, 27.132264529058116, 27.2124248496994, 27.292585170340683, 27.372745490981963, 27.452905811623246, 27.53306613226453, 27.613226452905813, 27.693386773547093, 27.773547094188377, 27.85370741482966, 27.93386773547094, 28.014028056112224, 28.094188376753507, 28.17434869739479, 28.25450901803607, 28.334669338677354, 28.414829659318638, 28.49498997995992, 28.5751503006012, 28.655310621242485, 28.73547094188377, 28.81563126252505, 28.895791583166332, 28.975951903807616, 29.0561122244489, 29.13627254509018, 29.216432865731463, 29.296593186372746, 29.37675350701403, 29.45691382765531, 29.537074148296593, 29.617234468937877, 29.697394789579157, 29.77755511022044, 29.857715430861724, 29.937875751503007, 30.018036072144287, 30.09819639278557, 30.178356713426854, 30.258517034068138, 30.338677354709418, 30.4188376753507, 30.498997995991985, 30.579158316633265, 30.65931863727455, 30.739478957915832, 30.819639278557116, 30.899799599198396, 30.97995991983968, 31.060120240480963, 31.140280561122246, 31.220440881763526, 31.30060120240481, 31.380761523046093, 31.460921843687373, 31.541082164328657, 31.62124248496994, 31.701402805611224, 31.781563126252504, 31.861723446893787, 31.94188376753507, 32.02204408817636, 32.102204408817634, 32.18236472945892, 32.2625250501002, 32.34268537074148, 32.42284569138276, 32.503006012024045, 32.58316633266533, 32.66332665330661, 32.743486973947896, 32.82364729458918, 32.90380761523046, 32.983967935871746, 33.06412825651302, 33.144288577154306, 33.22444889779559, 33.30460921843687, 33.38476953907816, 33.46492985971944, 33.545090180360724, 33.62525050100201, 33.705410821643284, 33.78557114228457, 33.86573146292585, 33.945891783567134, 34.02605210420842, 34.1062124248497, 34.186372745490985, 34.26653306613226, 34.346693386773545, 34.42685370741483, 34.50701402805611, 34.587174348697395, 34.66733466933868, 34.74749498997996, 34.82765531062124, 34.90781563126252, 34.987975951903806, 35.06813627254509, 35.14829659318637, 35.22845691382766, 35.30861723446894, 35.388777555110224, 35.4689378757515, 35.549098196392784, 35.62925851703407, 35.70941883767535, 35.789579158316634, 35.86973947895792, 35.9498997995992, 36.03006012024048, 36.11022044088176, 36.190380761523045, 36.27054108216433, 36.35070140280561, 36.430861723446895, 36.51102204408818, 36.591182364729455, 36.67134268537074, 36.75150300601202, 36.831663326653306, 36.91182364729459, 36.99198396793587, 37.07214428857716, 37.15230460921844, 37.23246492985972, 37.312625250501, 37.392785571142284, 37.47294589178357, 37.55310621242485, 37.633266533066134, 37.71342685370742, 37.793587174348694, 37.87374749498998, 37.95390781563126, 38.034068136272545, 38.11422845691383, 38.19438877755511, 38.274549098196395, 38.35470941883767, 38.434869739478955, 38.51503006012024, 38.59519038076152, 38.675350701402806, 38.75551102204409, 38.83567134268537, 38.91583166332666, 38.99599198396793, 39.07615230460922, 39.1563126252505, 39.236472945891784, 39.31663326653307, 39.39679358717435, 39.476953907815634, 39.55711422845691, 39.637274549098194, 39.71743486973948, 39.79759519038076, 39.877755511022045, 39.95791583166333, 40.03807615230461, 40.11823647294589, 40.19839679358717, 40.278557114228455, 40.35871743486974, 40.43887775551102, 40.519038076152306, 40.59919839679359, 40.67935871743487, 40.75951903807615, 40.83967935871743, 40.91983967935872, 41.0])
+              .range(['#800080ff', '#800080ff', '#7f0080ff', '#7f0080ff', '#7f0080ff', '#7f0080ff', '#7e0080ff', '#7e0080ff', '#7e0080ff', '#7e0080ff', '#7d0080ff', '#7d0080ff', '#7d0080ff', '#7d0080ff', '#7c0080ff', '#7c0080ff', '#7c0080ff', '#7c0080ff', '#7b0080ff', '#7b0080ff', '#7b0080ff', '#7b0080ff', '#7a0080ff', '#7a0081ff', '#7a0081ff', '#7a0081ff', '#790081ff', '#790081ff', '#790081ff', '#790081ff', '#780081ff', '#780081ff', '#780081ff', '#780081ff', '#770081ff', '#770081ff', '#770081ff', '#760081ff', '#760081ff', '#760081ff', '#760081ff', '#750081ff', '#750081ff', '#750081ff', '#750081ff', '#740081ff', '#740081ff', '#740081ff', '#740081ff', '#730081ff', '#730081ff', '#730081ff', '#730081ff', '#720081ff', '#720081ff', '#720081ff', '#720081ff', '#710081ff', '#710081ff', '#710081ff', '#710081ff', '#700081ff', '#700081ff', '#700081ff', '#700081ff', '#6f0081ff', '#6f0081ff', '#6f0081ff', '#6e0082ff', '#6e0082ff', '#6e0082ff', '#6e0082ff', '#6d0082ff', '#6d0082ff', '#6d0082ff', '#6d0082ff', '#6c0082ff', '#6c0082ff', '#6c0082ff', '#6c0082ff', '#6b0082ff', '#6b0082ff', '#6b0082ff', '#6b0082ff', '#6a0082ff', '#6a0082ff', '#6a0082ff', '#6a0082ff', '#690082ff', '#690082ff', '#690082ff', '#690082ff', '#680082ff', '#680082ff', '#680082ff', '#680082ff', '#670082ff', '#670082ff', '#670082ff', '#670082ff', '#660082ff', '#660082ff', '#660082ff', '#650082ff', '#650082ff', '#650082ff', '#650082ff', '#640082ff', '#640082ff', '#640082ff', '#640082ff', '#630082ff', '#630082ff', '#630083ff', '#630083ff', '#620083ff', '#620083ff', '#620083ff', '#620083ff', '#610083ff', '#610083ff', '#610083ff', '#610083ff', '#600083ff', '#600083ff', '#600083ff', '#600083ff', '#5f0083ff', '#5f0083ff', '#5f0083ff', '#5f0083ff', '#5e0083ff', '#5e0083ff', '#5e0083ff', '#5d0083ff', '#5d0083ff', '#5d0083ff', '#5d0083ff', '#5c0083ff', '#5c0083ff', '#5c0083ff', '#5c0083ff', '#5b0083ff', '#5b0083ff', '#5b0083ff', '#5b0083ff', '#5a0083ff', '#5a0083ff', '#5a0083ff', '#5a0083ff', '#590083ff', '#590083ff', '#590083ff', '#590083ff', '#580083ff', '#580083ff', '#580083ff', '#580083ff', '#570083ff', '#570084ff', '#570084ff', '#570084ff', '#560084ff', '#560084ff', '#560084ff', '#560084ff', '#550084ff', '#550084ff', '#550084ff', '#540084ff', '#540084ff', '#540084ff', '#540084ff', '#530084ff', '#530084ff', '#530084ff', '#530084ff', '#520084ff', '#520084ff', '#520084ff', '#520084ff', '#510084ff', '#510084ff', '#510084ff', '#510084ff', '#500084ff', '#500084ff', '#500084ff', '#500084ff', '#4f0084ff', '#4f0084ff', '#4f0084ff', '#4f0084ff', '#4e0084ff', '#4e0084ff', '#4e0084ff', '#4e0084ff', '#4d0084ff', '#4d0084ff', '#4d0084ff', '#4c0084ff', '#4c0084ff', '#4c0084ff', '#4c0084ff', '#4b0085ff', '#4b0085ff', '#4b0085ff', '#4b0085ff', '#4a0085ff', '#4a0085ff', '#4a0085ff', '#4a0085ff', '#490085ff', '#490085ff', '#490085ff', '#490085ff', '#480085ff', '#480085ff', '#480085ff', '#480085ff', '#470085ff', '#470085ff', '#470085ff', '#470085ff', '#460085ff', '#460085ff', '#460085ff', '#460085ff', '#450085ff', '#450085ff', '#450085ff', '#450085ff', '#440085ff', '#440085ff', '#440085ff', '#430085ff', '#430085ff', '#430085ff', '#430085ff', '#420085ff', '#420085ff', '#420085ff', '#420085ff', '#410085ff', '#410085ff', '#410085ff', '#410085ff', '#400085ff', '#400085ff', '#400086ff', '#400086ff', '#3f0086ff', '#3f0086ff', '#3f0086ff', '#3f0086ff', '#3e0086ff', '#3e0086ff', '#3e0086ff', '#3e0086ff', '#3d0086ff', '#3d0086ff', '#3d0086ff', '#3d0086ff', '#3c0086ff', '#3c0086ff', '#3c0086ff', '#3c0086ff', '#3b0086ff', '#3b0086ff', '#3b0086ff', '#3a0086ff', '#3a0086ff', '#3a0086ff', '#3a0086ff', '#390086ff', '#390086ff', '#390086ff', '#390086ff', '#380086ff', '#380086ff', '#380086ff', '#380086ff', '#370086ff', '#370086ff', '#370086ff', '#370086ff', '#360086ff', '#360086ff', '#360086ff', '#360086ff', '#350086ff', '#350086ff', '#350086ff', '#350086ff', '#340087ff', '#340087ff', '#340087ff', '#340087ff', '#330087ff', '#330087ff', '#330087ff', '#320087ff', '#320087ff', '#320087ff', '#320087ff', '#310087ff', '#310087ff', '#310087ff', '#310087ff', '#300087ff', '#300087ff', '#300087ff', '#300087ff', '#2f0087ff', '#2f0087ff', '#2f0087ff', '#2f0087ff', '#2e0087ff', '#2e0087ff', '#2e0087ff', '#2e0087ff', '#2d0087ff', '#2d0087ff', '#2d0087ff', '#2d0087ff', '#2c0087ff', '#2c0087ff', '#2c0087ff', '#2c0087ff', '#2b0087ff', '#2b0087ff', '#2b0087ff', '#2b0087ff', '#2a0087ff', '#2a0087ff', '#2a0087ff', '#290087ff', '#290087ff', '#290087ff', '#290088ff', '#280088ff', '#280088ff', '#280088ff', '#280088ff', '#270088ff', '#270088ff', '#270088ff', '#270088ff', '#260088ff', '#260088ff', '#260088ff', '#260088ff', '#250088ff', '#250088ff', '#250088ff', '#250088ff', '#240088ff', '#240088ff', '#240088ff', '#240088ff', '#230088ff', '#230088ff', '#230088ff', '#230088ff', '#220088ff', '#220088ff', '#220088ff', '#210088ff', '#210088ff', '#210088ff', '#210088ff', '#200088ff', '#200088ff', '#200088ff', '#200088ff', '#1f0088ff', '#1f0088ff', '#1f0088ff', '#1f0088ff', '#1e0088ff', '#1e0088ff', '#1e0088ff', '#1e0088ff', '#1d0088ff', '#1d0089ff', '#1d0089ff', '#1d0089ff', '#1c0089ff', '#1c0089ff', '#1c0089ff', '#1c0089ff', '#1b0089ff', '#1b0089ff', '#1b0089ff', '#1b0089ff', '#1a0089ff', '#1a0089ff', '#1a0089ff', '#1a0089ff', '#190089ff', '#190089ff', '#190089ff', '#180089ff', '#180089ff', '#180089ff', '#180089ff', '#170089ff', '#170089ff', '#170089ff', '#170089ff', '#160089ff', '#160089ff', '#160089ff', '#160089ff', '#150089ff', '#150089ff', '#150089ff', '#150089ff', '#140089ff', '#140089ff', '#140089ff', '#140089ff', '#130089ff', '#130089ff', '#130089ff', '#130089ff', '#120089ff', '#120089ff', '#120089ff', '#120089ff', '#11008aff', '#11008aff', '#11008aff', '#10008aff', '#10008aff', '#10008aff', '#10008aff', '#0f008aff', '#0f008aff', '#0f008aff', '#0f008aff', '#0e008aff', '#0e008aff', '#0e008aff', '#0e008aff', '#0d008aff', '#0d008aff', '#0d008aff', '#0d008aff', '#0c008aff', '#0c008aff', '#0c008aff', '#0c008aff', '#0b008aff', '#0b008aff', '#0b008aff', '#0b008aff', '#0a008aff', '#0a008aff', '#0a008aff', '#0a008aff', '#09008aff', '#09008aff', '#09008aff', '#09008aff', '#08008aff', '#08008aff', '#08008aff', '#07008aff', '#07008aff', '#07008aff', '#07008aff', '#06008aff', '#06008aff', '#06008aff', '#06008bff', '#05008bff', '#05008bff', '#05008bff', '#05008bff', '#04008bff', '#04008bff', '#04008bff', '#04008bff', '#03008bff', '#03008bff', '#03008bff', '#03008bff', '#02008bff', '#02008bff', '#02008bff', '#02008bff', '#01008bff', '#01008bff', '#01008bff', '#01008bff', '#00008bff', '#00008bff', '#00008bff', '#00008bff']);
+    
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x = d3.scale.linear()
+              .domain([1.0, 41.0])
+              .range([0, 450 - 50]);
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.legend = L.control({position: 'topright'});
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.legend.addTo(map_40784282ba67dcff477492df3e6ababd);
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.xAxis = d3.svg.axis()
+        .scale(color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([1.0, 41.0]);
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.g = color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.g.selectAll("rect")
+        .data(color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x(color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.color.domain()[i - 1]) : color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x.range()[0],
+            x1: i < color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.color.domain().length ? color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x(color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.color.domain()[i]) : color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.g.call(color_map_da24d8ecfbd3dc6577ec73a7d98e3d05.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Frequency");
+</script>
+</html>

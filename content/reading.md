@@ -3,9 +3,10 @@ title = "Reading"
 +++
 
 
+
 *Last updated 04/22/2025*
 
-**Currently reading:** *Reasons and Persons*, Derek Parfit; *Toward a Feminist Theory of the State*, Catharine MacKinnon.
+**Currently reading:** *Reasons and Persons*, Derek Parfit
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
