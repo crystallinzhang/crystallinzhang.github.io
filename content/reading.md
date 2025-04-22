@@ -3,15 +3,17 @@ title = "Reading"
 +++
 
 
-*Last updated 02/18/2025*
+*Last updated 04/22/2025*
 
-**Currently reading:** *Toward a Feminist Theory of the State*, Catharine MacKinnon.
+**Currently reading:** *Reasons and Persons*, Derek Parfit; *Toward a Feminist Theory of the State*, Catharine MacKinnon.
 
 ### 2025:
-1. *Behind the Beautiful Forevers*, Katherine Boo
-2. *The Price of Salt*, Patricia Highsmith
-3. *Medea*, Rachel Cusk
-4. *Fight Club*, Chuck Palahniuk
+1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
+2. *The Price of Salt*, Patricia Highsmith (1952)
+3. *Medea*, Rachel Cusk (2015)
+4. *Fight Club*, Chuck Palahniuk (1996)
+5. *Emma*, Jane Austen (1815)
+6. *Private Citizens*, Tony Tulathimutte (2016)
 
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
