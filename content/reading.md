@@ -4,9 +4,9 @@ title = "Reading"
 
 
 
-*Last updated 04/22/2025*
+*Last updated 06/13/2025*
 
-**Currently reading:** *Reasons and Persons*, Derek Parfit
+**Currently reading:** *One Hundred Years of Solitude*, Gabriel Garcia Marquez
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
@@ -15,6 +15,8 @@ title = "Reading"
 4. *Fight Club*, Chuck Palahniuk (1996)
 5. *Emma*, Jane Austen (1815)
 6. *Private Citizens*, Tony Tulathimutte (2016)
+7. *Male Fantasies*, Klaus Theweleit (1977) - in parts
+8. *Reasons and Persons*, Derek Parfit (1984) - in parts
 
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
