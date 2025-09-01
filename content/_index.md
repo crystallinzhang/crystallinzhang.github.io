@@ -2,36 +2,40 @@
 title = "Home"
 +++
 
-## Hi,
+## About Me:
 
-I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies. I compete for the Hart House Debating Club and lead the campus Effective Altruism chapter. 
+I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies.
 
-From May to August, I'm a summer credit analyst at RBC Capital Markets. I was an Atlas Fellow in 2023 and an intern at the Effective Institutions Project in 2024. I am sometimes a debate coach.
+I believe in the abundance agenda: I think most public good is downstream of cheap power and dynamic housing. Outside of that, I'm interested in anthropology and gender.
 
-I will be in Cambridge, UK from August 4-9. 
+Last summer, I worked in credit at an investment bank. In my past, I was an Effective Altruist, a debate coach, and a vet assistant.
 
+These days I identify most as a humanist. I try to have good epistemics and live the good life.
 
-## About me ##
+admonymous [here](https://admonymous.co/crystal-lin-zhang).
 
-*I am interested in:*
+## Lists:
+
+*I am academically interested in:*
 - reproductive discourses and technologies
 - insurers of last resort under climate change
 - nation-building fantasies
-- labour relations under hegemonic sexualities
-- cognitive empathy and animal suffering
+- cognitive empathy and animal wellbeing
+- gendered labour relations
 
 *I enjoy:*
-- sincerity
 - critical book reviews
 - Lake Ontario
-- long slow runs
-    -  half marathon time is 2h11m 
+- long slow runs (half marathon time is 2h11m)
 - small talk with strangers
+- calisthenics
 
 *I have got to:*
-- get my first unassisted pullup
 - get weirder
 - get kinder
+
+
+If this is interesting to you, send me a message. I like cold emails :) 
 
 <br>
 

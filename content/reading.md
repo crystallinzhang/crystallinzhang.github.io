@@ -4,9 +4,9 @@ title = "Reading"
 
 
 
-*Last updated 06/13/2025*
+*Last updated 08/31/2025*
 
-**Currently reading:** *One Hundred Years of Solitude*, Gabriel Garcia Marquez
+**Currently reading:** The Prize, Daniel Yergin (1990)
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
@@ -15,8 +15,10 @@ title = "Reading"
 4. *Fight Club*, Chuck Palahniuk (1996)
 5. *Emma*, Jane Austen (1815)
 6. *Private Citizens*, Tony Tulathimutte (2016)
-7. *Male Fantasies*, Klaus Theweleit (1977) - in parts
-8. *Reasons and Persons*, Derek Parfit (1984) - in parts
+7. *Dubliners*, James Joyce (1914)
+8. *Male Fantasies*, Klaus Theweleit (1977)
+9. *Reasons and Persons*, Derek Parfit (1984)
+10. *The Grapes of Wrath*, John Steinbeck (1939)
 
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
@@ -29,5 +31,7 @@ title = "Reading"
 8. *Intermezzo*, Sally Rooney
 9. *The Lying Life of Adults*, Elena Ferrante
 10. *Midnight in the Garden of Good and Evil*, John Berendt
+
+2024 favourite: Midnight in the Garden of Good and Evil, though I think about Bad Behaviour more. Most of these stories were about Place-- bit too much California for my preferences. 
 
 ---
