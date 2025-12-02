@@ -6,7 +6,7 @@ url = "/map/"
 ## 2024 Public Transit Usage
 *22 Apr, 2025*
 
-Here's a map of my Ontario public transit usage last year! Each dot is a station at which I tapped on. You can zoom out to see my visits to Waterloo and Guelph.
+Here's a map of my Ontario public transit usage in 2024. Each dot is a station at which I tapped on. You can zoom out to see my visits to Waterloo and Guelph.
 
 I downloaded the data through my PrestoCard account. This was almost entirely vibes coded with Gemini, save some manual coordinate searching for stations that were clearly incorrect. 
 

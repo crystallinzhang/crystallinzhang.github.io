@@ -2,40 +2,36 @@
 title = "Home"
 +++
 
-## About Me:
+## About
 
 I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies.
 
-I believe in the abundance agenda: I think most public good is downstream of cheap power and dynamic housing. Outside of that, I'm interested in anthropology and gender.
+Last summer, I worked in credit at an investment bank. In my past, I was an Effective Altruist, a debate coach, and a vet assistant. These days I identify most as a humanist. 
 
-Last summer, I worked in credit at an investment bank. In my past, I was an Effective Altruist, a debate coach, and a vet assistant.
+I try to have good epistemics and live the good life. I would like to add differential value to the world and I am exploring what that looks like. If you have ideas, send me an email.
 
-These days I identify most as a humanist. I try to have good epistemics and live the good life.
+Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
 
-admonymous [here](https://admonymous.co/crystal-lin-zhang).
+## Lists
 
-## Lists:
-
-*I am academically interested in:*
+*I am interested in:*
 - reproductive discourses and technologies
-- insurers of last resort under climate change
+- insurers of last resort
+- market clearing mechanisms
 - nation-building fantasies
 - cognitive empathy and animal wellbeing
-- gendered labour relations
+- affect theory
+- gendered subjectivities 
 
 *I enjoy:*
-- critical book reviews
+- rhizomes
 - Lake Ontario
-- long slow runs (half marathon time is 2h11m)
-- small talk with strangers
-- calisthenics
+- cross-country skiing
 
 *I have got to:*
 - get weirder
 - get kinder
 
-
-If this is interesting to you, send me a message. I like cold emails :) 
 
 <br>
 

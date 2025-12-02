@@ -4,9 +4,9 @@ title = "Reading"
 
 
 
-*Last updated 08/31/2025*
+*Last updated 12/01/2025*
 
-**Currently reading:** The Prize, Daniel Yergin (1990)
+**Currently reading:** *Cruel Optimism*, Lauren Berlant (2011)
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
@@ -19,6 +19,7 @@ title = "Reading"
 8. *Male Fantasies*, Klaus Theweleit (1977)
 9. *Reasons and Persons*, Derek Parfit (1984)
 10. *The Grapes of Wrath*, John Steinbeck (1939)
+11. *My Brilliant Friend*, Elena Ferrante (2011)
 
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
