@@ -8,7 +8,7 @@ I'm a student at the University of Toronto. I study Finance, Economics, and Cont
 
 Last summer, I worked in credit at an investment bank. In my past, I was an Effective Altruist, a debate coach, and a vet assistant. These days I identify most as a humanist. 
 
-I try to have good epistemics and live the good life. I would like to add differential value to the world and I am exploring what that looks like. If you have ideas, send me an email.
+I try to have good epistemics and live the good life. I would like to add differential value to the world and I am exploring what that looks like.
 
 Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
 
@@ -27,11 +27,14 @@ Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
 - rhizomes
 - Lake Ontario
 - cross-country skiing
+- realist fiction
+- small talk with strangers
 
 *I have got to:*
 - get weirder
-- get kinder
+- be sillier
 
+*If you find this interesting, send me an email.*
 
 <br>
 
