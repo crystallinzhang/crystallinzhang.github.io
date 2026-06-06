@@ -4,9 +4,16 @@ title = "Reading"
 
 
 
-*Last updated 12/01/2025*
+*Last updated 06/05/2026*
 
-**Currently reading:** *Cruel Optimism*, Lauren Berlant (2011)
+**Currently reading:** The Republic, Death's End.
+
+Those two have been taking a while and I predict will continue to take a while. In the meantime, please email me reading suggestions. I am particularly interested in poetry recommendations.
+
+### 2026:
+1. *Cruel Optimism*, Lauren Berlant (2011)
+2. *The Promise of Happiness*, Sara Ahmed (2010)
+3. *The Three-Body Problem; The Dark Forest*, Cixin Liu (2008)
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
@@ -20,6 +27,9 @@ title = "Reading"
 9. *Reasons and Persons*, Derek Parfit (1984)
 10. *The Grapes of Wrath*, John Steinbeck (1939)
 11. *My Brilliant Friend*, Elena Ferrante (2011)
+12. *Normal People*, Sally Rooney (2018)-- my 4th reread
+13. *Stories of Your Life and Others*, Ted Chiang (2002)
+14. *The Prize*, Daniel Yergin (1990)
 
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
@@ -32,7 +42,5 @@ title = "Reading"
 8. *Intermezzo*, Sally Rooney
 9. *The Lying Life of Adults*, Elena Ferrante
 10. *Midnight in the Garden of Good and Evil*, John Berendt
-
-2024 favourite: Midnight in the Garden of Good and Evil, though I think about Bad Behaviour more. Most of these stories were about Place-- bit too much California for my preferences. 
 
 ---

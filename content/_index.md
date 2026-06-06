@@ -4,35 +4,36 @@ title = "Home"
 
 ## About
 
-I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies.
+Hi, I'm [Crystal](https://crystallinzhang.github.io/). I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies.
 
-Last summer, I worked in credit at an investment bank. In my past, I was an Effective Altruist, a debate coach, and a vet assistant. These days I identify most as a humanist. 
+Previously, I was an Effective Altruist, a competitive debater, and a vet assistant. These days I identify most as a humanist.
 
-I try to have good epistemics and live the good life. I would like to add differential value to the world and I am exploring what that looks like.
+I try to have good epistemics and live the good life. I would like to add differential value to the world and I am currently exploring what that looks like. 
 
 Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
 
 ## Lists
 
 *I am interested in:*
-- reproductive discourses and technologies
+- complex systems
+- emergent behaviour
 - insurers of last resort
 - market clearing mechanisms
-- nation-building fantasies
-- cognitive empathy and animal wellbeing
-- affect theory
-- gendered subjectivities 
+- reproductive discourses and technologies
+- gendered subjectivities
+- legal constructions
+
+*I am currently occupied with:*
+- mortgage backed securities
+- an accounting of wellbeing
+- ethics of care
 
 *I enjoy:*
-- rhizomes
-- Lake Ontario
-- cross-country skiing
-- realist fiction
-- small talk with strangers
-
-*I have got to:*
-- get weirder
-- be sillier
+- cross country skiing
+- mailing postcards
+- [808s](https://open.spotify.com/album/3WFTGIO6E3Xh4paEOBY9OU?si=kUDmTPCgQSCseGRYnUXing)
+- Edward Hopper paintings
+- [rhizomes](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315816852-78/rhizome-gilles-deleuze-f%C3%A9lix-guattari)
 
 *If you find this interesting, send me an email.*
 
