@@ -8,9 +8,9 @@ Hi, I'm [Crystal](https://crystallinzhang.github.io/). I'm a student at the Univ
 
 Previously, I was an Effective Altruist, a competitive debater, and a vet assistant. These days I identify most as a humanist.
 
-I try to have good epistemics and live the good life. I would like to add differential value to the world and I am currently exploring what that looks like. 
+I try to have good epistemics and live the good life. I would like to add differential value to the future and am exploring what that looks like. 
 
-Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
+Give me anonymous feedback through admonymous [here](https://admonymous.co/crystal-lin-zhang).
 
 ## Lists
 
@@ -20,20 +20,25 @@ Find my admonymous [here](https://admonymous.co/crystal-lin-zhang).
 - insurers of last resort
 - market clearing mechanisms
 - reproductive discourses and technologies
-- gendered subjectivities
 - legal constructions
+- power and gas commodities trading
 
-*I am currently occupied with:*
-- mortgage backed securities
-- an accounting of wellbeing
-- ethics of care
+
+*I am currently:*
+- occupied with mortgage backed securities
+- creating an accounting of wellbeing
+- deriving an ethics of care
+- memorizing Debussy's Arabesque No. 1
+- practicing 我的中文
+
 
 *I enjoy:*
 - cross country skiing
-- mailing postcards
+- postcards
 - [808s](https://open.spotify.com/album/3WFTGIO6E3Xh4paEOBY9OU?si=kUDmTPCgQSCseGRYnUXing)
 - Edward Hopper paintings
 - [rhizomes](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315816852-78/rhizome-gilles-deleuze-f%C3%A9lix-guattari)
+  
 
 *If you find this interesting, send me an email.*
 

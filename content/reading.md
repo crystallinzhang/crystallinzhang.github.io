@@ -4,16 +4,16 @@ title = "Reading"
 
 
 
-*Last updated 06/05/2026*
+*Last updated 07/06/2026*
 
-**Currently reading:** The Republic, Death's End.
+**Currently reading:** The Republic, The World for Sale
 
-Those two have been taking a while and I predict will continue to take a while. In the meantime, please email me reading suggestions. I am particularly interested in poetry recommendations.
+Those two have been taking a while and I predict will continue to take a while. In the meantime, please email me reading suggestions. I am most interested in short story recommendations-- my favourite is still Of Mice and Men.
 
 ### 2026:
 1. *Cruel Optimism*, Lauren Berlant (2011)
 2. *The Promise of Happiness*, Sara Ahmed (2010)
-3. *The Three-Body Problem; The Dark Forest*, Cixin Liu (2008)
+3. *The Three-Body Problem; The Dark Forest; Death's End*, Cixin Liu (2006, 2008, 2010)
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
