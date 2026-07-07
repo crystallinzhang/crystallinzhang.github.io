@@ -14,7 +14,9 @@ Give me anonymous feedback through admonymous [here](https://admonymous.co/cryst
 
 ## Lists
 
-*I am interested in:*
+<details class="dropdown">
+<summary><em class="g1">I am interested in:</em></summary>
+
 - complex systems
 - emergent behaviour
 - insurers of last resort
@@ -23,24 +25,31 @@ Give me anonymous feedback through admonymous [here](https://admonymous.co/cryst
 - legal constructions
 - power and gas commodities trading
 
+</details>
 
-*I am currently:*
+<details class="dropdown">
+<summary><em class="g2">I am currently:</em></summary>
+
 - occupied with mortgage backed securities
 - creating an accounting of wellbeing
 - deriving an ethics of care
 - memorizing Debussy's Arabesque No. 1
 - practicing 我的中文
 
+</details>
 
-*I enjoy:*
+<details class="dropdown">
+<summary><em class="g3">I enjoy:</em></summary>
+
 - cross country skiing
 - postcards
 - [808s](https://open.spotify.com/album/3WFTGIO6E3Xh4paEOBY9OU?si=kUDmTPCgQSCseGRYnUXing)
 - Edward Hopper paintings
 - [rhizomes](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315816852-78/rhizome-gilles-deleuze-f%C3%A9lix-guattari)
-  
 
-*If you find this interesting, send me an email.*
+</details>
+
+<em class="g4">If you find this interesting, send me an email.</em>
 
 <br>
 

@@ -4,27 +4,58 @@
       --font-main: Helvetica, sans-serif;
       --font-secondary: Helvetica, sans-serif;
       --font-scale: 1em;
-      --background-color: #f8f8f4;
-      --heading-color: #1b4426;
-      --text-color: #46423f;
-      --link-color: #2a8963;
-      --visited-color:  #297072;
-      --code-background-color: #f2f2f2;
-      --code-color: #222;
-      --blockquote-color: #222;
+
+      /* Light — soft sage-green paper + forest greens */
+      --background-color: #e9f0df;
+      --heading-color: #21402c;
+      --text-color: #423f39;
+      --link-color: #2f7a54;
+      --visited-color: #5f7d5a;
+      --code-background-color: #dee8d3;
+      --code-color: #33302b;
+      --blockquote-color: #55524c;
+
+      /* Progressively greener italics */
+      --green-1: #6d7d61;
+      --green-2: #4f8354;
+      --green-3: #338648;
+      --green-4: #167a38;
   }
 
+  /* Dark theme — applied when the user has no explicit choice but prefers dark */
   @media (prefers-color-scheme: dark) {
-      :root {
-          --background-color: #191918;
-          --heading-color: #c0ccbe;
-          --text-color: #d3d3d3;
-          --link-color: #7aad97;
-          --visited-color:  #76b1ac;
-          --code-background-color: #777;
-          --code-color: #ddd;
-          --blockquote-color: #ccc;
+      :root:not([data-theme="light"]) {
+          --background-color: #161814;
+          --heading-color: #cbd6c3;
+          --text-color: #d6d3ca;
+          --link-color: #8fbf9f;
+          --visited-color: #7ba888;
+          --code-background-color: #2a2e27;
+          --code-color: #e2e0d7;
+          --blockquote-color: #b8b5ac;
+
+          --green-1: #a3bdb0;
+          --green-2: #86bcac;
+          --green-3: #6cbaa7;
+          --green-4: #52b6a0;
       }
+  }
+
+  /* Dark theme — applied when the user explicitly chooses dark */
+  :root[data-theme="dark"] {
+      --background-color: #161814;
+      --heading-color: #cbd6c3;
+      --text-color: #d6d3ca;
+      --link-color: #8fbf9f;
+      --visited-color: #7ba888;
+      --code-background-color: #2a2e27;
+      --code-color: #e2e0d7;
+      --blockquote-color: #b8b5ac;
+
+      --green-1: #a3bdb0;
+      --green-2: #86bcac;
+      --green-3: #6cbaa7;
+      --green-4: #52b6a0;
   }
 
   body {
@@ -39,6 +70,7 @@
       overflow-wrap: break-word;
       line-height: 1.5;
       color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -53,7 +85,7 @@
   }
 
   a:hover {
-      text-decoration: underline; 
+      text-decoration: underline;
   }
 
   nav a {
@@ -96,7 +128,7 @@
 
   blockquote {
       border-left: 1px solid #999;
-      color: var(--code-color);
+      color: var(--blockquote-color);
       padding-left: 20px;
       font-style: italic;
   }
@@ -145,29 +177,149 @@
   ul.blog-posts li a:visited {
       color: var(--visited-color);
   }
-  /* Add these new styles */
-.title {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-.sparkle-logo {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.4s ease;
-    fill: var(--heading-color); /* This will match your heading color */
-}
+  /* Title + spinning star */
+  .title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+  }
 
-.sparkle-logo:hover {
-    transform: rotate(360deg);
-    animation: twinkle 2s infinite;
-}
+  .title-text h2 {
+      margin: 0;
+  }
 
-@keyframes twinkle {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
-}
+  .sparkle-link {
+      display: inline-flex;
+      line-height: 0;
+  }
+
+  .sparkle-logo {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      transition: transform 0.4s ease;
+      fill: var(--heading-color);
+  }
+
+  .sparkle-link:hover .sparkle-logo {
+      transform: rotate(360deg);
+      animation: twinkle 2s infinite;
+  }
+
+  @keyframes twinkle {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+  }
+
+  /* Progressively greener italics on the home page */
+  em.g1 { color: var(--green-1); font-style: italic; }
+  em.g2 { color: var(--green-2); font-style: italic; }
+  em.g3 { color: var(--green-3); font-style: italic; }
+  em.g4 { color: var(--green-4); font-style: italic; }
+
+  /* Collapsible list dropdowns */
+  .dropdown {
+      margin: 0.6em 0;
+  }
+
+  .dropdown summary {
+      cursor: pointer;
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      user-select: none;
+  }
+
+  .dropdown summary::-webkit-details-marker {
+      display: none;
+  }
+
+  .dropdown summary::before {
+      content: "\25B8"; /* ▸ */
+      color: var(--link-color);
+      font-size: 0.85em;
+      transition: transform 0.2s ease;
+  }
+
+  .dropdown[open] summary::before {
+      transform: rotate(90deg);
+  }
+
+  .dropdown[open] > ul {
+      animation: dropdown-in 0.25s ease;
+  }
+
+  @keyframes dropdown-in {
+      from { opacity: 0; transform: translateY(-4px); }
+      to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Dark / light toggle button (top right) */
+  #theme-toggle {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 100;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+  }
+
+  #theme-toggle:hover {
+      background: color-mix(in srgb, var(--heading-color) 12%, transparent);
+  }
+
+  #theme-toggle svg {
+      width: 30px;
+      height: 30px;
+      overflow: visible;
+  }
+
+  /* Sun */
+  #theme-toggle .sun-core {
+      fill: #e8a13a;
+      transition: fill 0.4s ease;
+  }
+
+  #theme-toggle .rays line {
+      stroke: #e8a13a;
+      stroke-width: 2;
+      stroke-linecap: round;
+      transform-origin: 20px 20px;
+      transition: opacity 0.4s ease, transform 0.5s ease;
+  }
+
+  /* Cloud starts retracted (tucked up-right, invisible) */
+  #theme-toggle .cloud {
+      fill: var(--heading-color);
+      opacity: 0;
+      transform: translate(12px, -14px) scale(0.2);
+      transform-origin: 20px 20px;
+      transition: transform 0.55s cubic-bezier(0.34, 1.3, 0.5, 1), opacity 0.45s ease;
+  }
+
+  /* Dark mode: cloud rolls in over the sun, rays fade */
+  :root[data-theme="dark"] #theme-toggle .cloud {
+      opacity: 1;
+      transform: translate(0, 3px) scale(1.05);
+  }
+
+  :root[data-theme="dark"] #theme-toggle .rays line {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+
+  :root[data-theme="dark"] #theme-toggle .sun-core {
+      fill: #cdb98a;
+  }
 </style>
