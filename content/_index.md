@@ -10,7 +10,7 @@ Previously, I was an Effective Altruist, a competitive debater, and a vet assist
 
 I try to have good epistemics and live the good life. I would like to add differential value to the future and am exploring what that looks like. 
 
-Give me anonymous feedback through admonymous [here](https://admonymous.co/crystal-lin-zhang).
+Give me anonymous feedback through admonymous [here](https://admonymous.co/clz).
 
 ## Lists
 
@@ -22,8 +22,7 @@ Give me anonymous feedback through admonymous [here](https://admonymous.co/cryst
 - insurers of last resort
 - market clearing mechanisms
 - reproductive discourses and technologies
-- legal constructions
-- power and gas commodities trading
+- energy markets
 
 </details>
 
