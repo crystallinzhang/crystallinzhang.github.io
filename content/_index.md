@@ -4,11 +4,15 @@ title = "Home"
 
 ## About
 
-Hi, I'm [Crystal](https://crystallinzhang.github.io/). I'm a student at the University of Toronto. I study Finance, Economics, and Contemporary Asian Studies.
+Hi, I'm [Crystal](https://crystallinzhang.github.io/). I'm a student at the University of Toronto. I study Finance, Economics, and Asian Studies.
 
-Previously, I was an Effective Altruist, a competitive debater, and a vet assistant. These days I identify most as a humanist.
+I have been a competitive debater, an Effective Altruist and a vet assistant. These days I identify most as a humanist.
 
-I try to have good epistemics and live the good life. I would like to add differential value to the future and am exploring what that looks like. 
+I try to have good epistemics and live the good life. 
+
+My vision of the good life involves accelerating human development. I love humanity and want it to be as capable as possible so that it survives against existential risks. This means making the world abundant in wealth and energy. 
+
+I would like to add differential value to the future. I believe that AI is the single most important technology of our times and I am actively exploring ways to shape its development and deployment.
 
 Give me anonymous feedback through admonymous [here](https://admonymous.co/clz).
 
@@ -19,28 +23,31 @@ Give me anonymous feedback through admonymous [here](https://admonymous.co/clz).
 
 - complex systems
 - emergent behaviour
-- insurers of last resort
-- market clearing mechanisms
+- game theory
 - reproductive discourses and technologies
-- energy markets
+- artificial general intelligence
+- neurotechnologies
+- global supply chain resilience
+- US-China relations
+
 
 </details>
 
 <details class="dropdown">
 <summary><em class="g2">I am currently:</em></summary>
 
-- occupied with mortgage backed securities
+- occupied with finance as the substrate of the world
 - creating an accounting of wellbeing
 - deriving an ethics of care
-- memorizing Debussy's Arabesque No. 1
 - practicing 我的中文
+- writing about data centers (more to come)
 
 </details>
 
 <details class="dropdown">
 <summary><em class="g3">I enjoy:</em></summary>
 
-- cross country skiing
+- endurance sports (cross-country skiing; long distance running; paddling)
 - postcards
 - [808s](https://open.spotify.com/album/3WFTGIO6E3Xh4paEOBY9OU?si=kUDmTPCgQSCseGRYnUXing)
 - Edward Hopper paintings
