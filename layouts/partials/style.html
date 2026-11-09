@@ -1,8 +1,10 @@
 <style>
   :root {
       --width: 800px;
-      --font-main: Helvetica, sans-serif;
-      --font-secondary: Helvetica, sans-serif;
+      /* Headings: Work Sans — clean + friendly, kerns "ry" properly (unlike Helvetica/Arial).
+         To swap it, change the family here and the <link> in partials/custom_head.html. */
+      --font-main: "Work Sans", ui-rounded, "Segoe UI", system-ui, -apple-system, sans-serif;
+      --font-secondary: Helvetica, Arial, system-ui, sans-serif;
       --font-scale: 1em;
 
       /* Light — soft sage-green paper + forest greens */
@@ -62,7 +64,10 @@
       font-family: var(--font-secondary);
       font-size: var(--font-scale);
       margin: auto;
-      padding: 20px;
+      /* Extra top padding so the header clears the top of the screen (and the
+         fixed theme toggle) instead of hugging it. */
+      padding: 60px 20px 24px;
+      padding-top: calc(60px + env(safe-area-inset-top, 0px));
       max-width: var(--width);
       text-align: left;
       background-color: var(--background-color);
@@ -70,12 +75,21 @@
       overflow-wrap: break-word;
       line-height: 1.5;
       color: var(--text-color);
-      transition: background-color 0.4s ease, color 0.4s ease;
+      transition: background-color 0.12s ease, color 0.12s ease;
+  }
+
+  @media (max-width: 600px) {
+      body {
+          padding: 48px 16px 24px;
+          padding-top: calc(48px + env(safe-area-inset-top, 0px));
+      }
   }
 
   h1, h2, h3, h4, h5, h6 {
       font-family: var(--font-main);
       color: var(--heading-color);
+      font-kerning: normal;
+      font-variant-ligatures: common-ligatures;
   }
 
   a {
@@ -187,6 +201,8 @@
 
   .title-text h2 {
       margin: 0;
+      /* A hair of tracking keeps pairs like "ry" in "Crystal" from colliding. */
+      letter-spacing: 0.01em;
   }
 
   .sparkle-link {
@@ -237,24 +253,15 @@
       display: none;
   }
 
+  /* No transition/animation anywhere here — dropdowns open instantly. */
   .dropdown summary::before {
       content: "\25B8"; /* ▸ */
       color: var(--link-color);
       font-size: 0.85em;
-      transition: transform 0.2s ease;
   }
 
   .dropdown[open] summary::before {
       transform: rotate(90deg);
-  }
-
-  .dropdown[open] > ul {
-      animation: dropdown-in 0.25s ease;
-  }
-
-  @keyframes dropdown-in {
-      from { opacity: 0; transform: translateY(-4px); }
-      to   { opacity: 1; transform: translateY(0); }
   }
 
   /* Dark / light toggle button (top right) */
@@ -288,7 +295,7 @@
   /* Sun */
   #theme-toggle .sun-core {
       fill: #e8a13a;
-      transition: fill 0.4s ease;
+      transition: fill 0.18s ease;
   }
 
   #theme-toggle .rays line {
@@ -296,7 +303,7 @@
       stroke-width: 2;
       stroke-linecap: round;
       transform-origin: 20px 20px;
-      transition: opacity 0.4s ease, transform 0.5s ease;
+      transition: opacity 0.16s ease, transform 0.2s ease;
   }
 
   /* Cloud starts retracted (tucked up-right, invisible) */
@@ -305,7 +312,7 @@
       opacity: 0;
       transform: translate(12px, -14px) scale(0.2);
       transform-origin: 20px 20px;
-      transition: transform 0.55s cubic-bezier(0.34, 1.3, 0.5, 1), opacity 0.45s ease;
+      transition: transform 0.26s cubic-bezier(0.34, 1.3, 0.5, 1), opacity 0.18s ease;
   }
 
   /* Dark mode: cloud rolls in over the sun, rays fade */
@@ -321,5 +328,89 @@
 
   :root[data-theme="dark"] #theme-toggle .sun-core {
       fill: #cdb98a;
+  }
+
+  /* ============================== Footnotes =============================
+     Two parts: the collected list Hugo renders at the bottom of the post
+     (goldmark's default footnote HTML — .footnotes / .footnote-ref / etc.,
+     just restyled to match the theme), and a hover/focus-triggered sidenote
+     box that partials/footnotes.html always places beside the reference —
+     in the true margin when there's room, narrower and hugging the
+     viewport edge when there isn't. On touch devices (no hover) it opens
+     on tap instead — see the script for the split. Clicking the number
+     itself always jumps to its entry in the list below, same as a plain
+     footnote link. */
+
+  .footnotes {
+      margin-top: 3em;
+      font-size: 0.85em;
+      color: var(--text-color);
+  }
+
+  .footnotes hr {
+      border-top: 1px dashed;
+      opacity: 0.5;
+      margin-bottom: 1.2em;
+  }
+
+  .footnotes ol { padding-left: 1.3em; }
+  .footnotes li { margin-bottom: 0.7em; }
+  .footnotes li p { margin: 0; display: inline; }
+
+  .footnote-backref {
+      margin-left: 3px;
+      text-decoration: none;
+  }
+
+  .footnote-ref {
+      text-decoration: none;
+      padding: 0 1px;
+  }
+
+  /* Shown while its sidenote box is open. */
+  .footnote-ref[aria-expanded="true"] {
+      background: color-mix(in srgb, var(--link-color) 28%, transparent);
+  }
+
+  /* The popup box itself. No transition/animation anywhere in this block —
+     it snaps open and closed. Colour is derived from the theme so it's
+     automatically "a bit lighter/darker than the background" in both
+     light and dark mode without separate overrides. */
+  .footnote-popup {
+      position: absolute;
+      z-index: 150;
+      box-sizing: border-box;
+      padding: 12px 14px;
+      font-size: 0.85em;
+      line-height: 1.5;
+      background: color-mix(in srgb, var(--heading-color) 6%, var(--background-color));
+      border: 1px solid color-mix(in srgb, var(--heading-color) 45%, transparent);
+      border-radius: 0;
+      pointer-events: auto;
+  }
+
+  .footnote-popup p { margin: 0; }
+  .footnote-popup a { color: var(--link-color); }
+
+  /* Dotted leader line from the footnote number to the box — always a
+     straight run of one or two axis-aligned segments, never a diagonal.
+     A segment left at zero length (the common case) simply doesn't show,
+     leaving a single straight line; the second segment only appears when
+     the box had to shift to stay clamped on-screen. */
+  .footnote-connector-h,
+  .footnote-connector-v {
+      position: absolute;
+      z-index: 149;
+      pointer-events: none;
+  }
+
+  .footnote-connector-h {
+      height: 0;
+      border-top: 1px dotted color-mix(in srgb, var(--heading-color) 55%, transparent);
+  }
+
+  .footnote-connector-v {
+      width: 0;
+      border-left: 1px dotted color-mix(in srgb, var(--heading-color) 55%, transparent);
   }
 </style>

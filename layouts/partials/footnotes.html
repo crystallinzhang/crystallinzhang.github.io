@@ -1,0 +1,185 @@
+<script>
+(function () {
+  var refs = document.querySelectorAll('a.footnote-ref');
+  if (!refs.length) return;
+  var main = document.querySelector('main');
+  if (!main) return;
+
+  var GAP = 18, MARGIN = 14, EDGE = 10, BOX_W = 260, MIN_W = 170;
+  var CLOSE_DELAY = 300; // grace period so the pointer can travel ref -> box
+
+  // Devices with a real hovering pointer get preview-on-hover, click-jumps-
+  // to-the-list-below. Touch devices have no hover, so tap opens the box
+  // instead (and the box has no jump-to-bottom option — it's already there).
+  var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  var popup = null, connectorH = null, connectorV = null, openRef = null;
+  var closeTimer = null;
+
+  function cancelClose() {
+    if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
+  }
+
+  function closePopup() {
+    cancelClose();
+    if (popup) { popup.remove(); popup = null; }
+    if (connectorH) { connectorH.remove(); connectorH = null; }
+    if (connectorV) { connectorV.remove(); connectorV = null; }
+    if (openRef) { openRef.setAttribute('aria-expanded', 'false'); openRef = null; }
+  }
+
+  function scheduleClose() {
+    cancelClose();
+    closeTimer = setTimeout(closePopup, CLOSE_DELAY);
+  }
+
+  function setSeg(el, x, y, w, h) {
+    el.style.left = x + 'px';
+    el.style.top = y + 'px';
+    el.style.width = w + 'px';
+    el.style.height = h + 'px';
+  }
+
+  function position(ref) {
+    var vw = window.innerWidth, vh = window.innerHeight;
+    var sx = window.scrollX, sy = window.scrollY;
+    var refRect = ref.getBoundingClientRect();
+    var mainRect = main.getBoundingClientRect();
+
+    var spaceRight = vw - mainRect.right;
+    var spaceLeft = mainRect.left;
+    var placement = spaceRight >= spaceLeft ? 'right' : 'left';
+
+    // Always a side box, never below the text. Full-width on a real desktop
+    // margin; narrower on small screens so it still reads as "at the side"
+    // rather than covering the column, hugging the viewport edge (and so
+    // overlapping the text a little, for lack of a true margin to sit in)
+    // once the screen is too narrow for a true margin at all.
+    var boxW = Math.min(BOX_W, Math.max(MIN_W, vw * 0.62));
+
+    var boxLeftV;
+    if (placement === 'right') {
+      boxLeftV = Math.min(mainRect.right + GAP, vw - EDGE - boxW);
+    } else {
+      boxLeftV = Math.max(mainRect.left - GAP - boxW, EDGE);
+    }
+
+    popup.style.width = boxW + 'px';
+
+    // Measured after width is applied, while still visibility:hidden so
+    // there's no visible flash between laying it out and placing it.
+    var boxH = popup.offsetHeight;
+
+    var boxTopV = refRect.top - 8;
+    boxTopV = Math.min(boxTopV, vh - boxH - MARGIN);
+    boxTopV = Math.max(boxTopV, MARGIN);
+
+    popup.style.left = (boxLeftV + sx) + 'px';
+    popup.style.top = (boxTopV + sy) + 'px';
+
+    // Two axis-aligned segments, never a diagonal: horizontal out from the
+    // number to the box's near edge, then vertical into the box. The
+    // vertical leg is 0-length (invisible, leaving a plain horizontal line)
+    // unless the box had to clamp away from the ref's exact height.
+    var boxEdgeX = placement === 'right' ? boxLeftV : boxLeftV + boxW;
+    var refEdgeX = placement === 'right' ? refRect.right : refRect.left;
+    var refY = refRect.top + refRect.height / 2;
+    var targetY = boxTopV + 10;
+    var hx1 = Math.min(refEdgeX, boxEdgeX), hx2 = Math.max(refEdgeX, boxEdgeX);
+    setSeg(connectorH, hx1 + sx, refY + sy, hx2 - hx1, 0);
+    var vy1 = Math.min(refY, targetY), vy2 = Math.max(refY, targetY);
+    setSeg(connectorV, boxEdgeX + sx, vy1 + sy, 0, vy2 - vy1);
+  }
+
+  function showPopup(ref) {
+    // getElementById, not querySelector(href) — ids like "fn:1" contain a
+    // colon, which querySelector parses as a pseudo-class and rejects.
+    var li = document.getElementById(ref.getAttribute('href').slice(1));
+    if (!li) return;
+    var clone = li.cloneNode(true);
+    var back = clone.querySelector('.footnote-backref');
+    if (back) back.remove();
+    clone.removeAttribute('id');
+
+    popup = document.createElement('div');
+    popup.className = 'footnote-popup';
+    popup.setAttribute('role', 'note');
+    popup.innerHTML = clone.innerHTML;
+
+    connectorH = document.createElement('div');
+    connectorH.className = 'footnote-connector-h';
+    connectorV = document.createElement('div');
+    connectorV.className = 'footnote-connector-v';
+
+    popup.style.visibility = 'hidden';
+    connectorH.style.visibility = 'hidden';
+    connectorV.style.visibility = 'hidden';
+
+    document.body.appendChild(popup);
+    document.body.appendChild(connectorH);
+    document.body.appendChild(connectorV);
+
+    position(ref);
+
+    popup.style.visibility = '';
+    connectorH.style.visibility = '';
+    connectorV.style.visibility = '';
+
+    ref.setAttribute('aria-expanded', 'true');
+    openRef = ref;
+
+    if (canHover) {
+      popup.addEventListener('mouseenter', cancelClose);
+      popup.addEventListener('mouseleave', scheduleClose);
+      popup.addEventListener('focusin', cancelClose);
+      popup.addEventListener('focusout', scheduleClose);
+    }
+  }
+
+  function openFor(ref) {
+    cancelClose();
+    if (openRef === ref) return;
+    closePopup();
+    showPopup(ref);
+  }
+
+  refs.forEach(function (ref) {
+    ref.setAttribute('aria-expanded', 'false');
+
+    if (canHover) {
+      ref.addEventListener('mouseenter', function () { openFor(ref); });
+      ref.addEventListener('mouseleave', scheduleClose);
+      ref.addEventListener('focusin', function () { openFor(ref); });
+      ref.addEventListener('focusout', scheduleClose);
+      // Let the click through — it jumps to the entry in the list below,
+      // same as a plain footnote link. Just tidy up the preview box first.
+      ref.addEventListener('click', function () { closePopup(); });
+    } else {
+      ref.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var wasOpen = openRef === ref;
+        closePopup();
+        if (!wasOpen) showPopup(ref);
+      });
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!popup || popup.contains(e.target)) return;
+    closePopup();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  // Reposition rather than close — mobile browsers fire resize when the
+  // address bar collapses on scroll, and snapping the box shut mid-read
+  // would feel broken. Re-running position() also re-picks the side
+  // (right/left) and width, so a real window resize is handled correctly too.
+  window.addEventListener('resize', function () {
+    if (openRef) position(openRef);
+  });
+})();
+</script>

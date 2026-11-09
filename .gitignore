@@ -1,2 +1,10 @@
 # couple-bets is a separate app with its own git repo — keep it out of the blog repo
 couple-bets/
+
+# Hugo build output — CI rebuilds this from source on every push, so the
+# generated copy never needs to be committed.
+/public/
+
+# Hugo's image/asset processing cache and build lock
+/resources/
+.hugo_build.lock

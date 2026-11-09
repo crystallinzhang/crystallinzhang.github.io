@@ -4,16 +4,21 @@ title = "Reading"
 
 
 
-*Last updated 07/06/2026*
+*Last updated 11/08/2026*
 
-**Currently reading:** The Republic, The World for Sale
-
-Those two have been taking a while and I predict will continue to take a while. In the meantime, please email me reading suggestions. I am most interested in short story recommendations-- my favourite is still Of Mice and Men.
+**Currently reading:** What is Intelligence?, Blaise Aguera y Arcas (2025)
 
 ### 2026:
 1. *Cruel Optimism*, Lauren Berlant (2011)
 2. *The Promise of Happiness*, Sara Ahmed (2010)
-3. *The Three-Body Problem; The Dark Forest; Death's End*, Cixin Liu (2006, 2008, 2010)
+3. *The Three-Body Problem*, Cixin Liu (2006)
+4. *The Dark Forest*, Cixin Liu (2008)
+5. *Death's End*, Cixin Liu (2010)
+6. *Ender's Game*, Orson Scott Card (1985)
+7. *The Metamorphosis of Prime Intellect*, Roger Williams (1994)
+8. *Against Progress*, Slavoj Žižek (2024)
+
+Shaping up to be a year of scifi. Thanks Hugging Face.
 
 ### 2025:
 1. *Behind the Beautiful Forevers*, Katherine Boo (2012)
@@ -31,6 +36,8 @@ Those two have been taking a while and I predict will continue to take a while. 
 13. *Stories of Your Life and Others*, Ted Chiang (2002)
 14. *The Prize*, Daniel Yergin (1990)
 
+Was mostly interested in interpersonal relations. Plus some oil at the end.
+
 ### 2024:
 1. *Uncanny Valley*, Anna Weiner
 2. *Fear and Loathing in Las Vegas*, Hunter S. Thompson
@@ -42,5 +49,7 @@ Those two have been taking a while and I predict will continue to take a while. 
 8. *Intermezzo*, Sally Rooney
 9. *The Lying Life of Adults*, Elena Ferrante
 10. *Midnight in the Garden of Good and Evil*, John Berendt
+
+Year of America.
 
 ---
