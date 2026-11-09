@@ -1,15 +1,17 @@
 <style>
   :root {
       --width: 800px;
-      /* Headings: Work Sans — clean + friendly, kerns "ry" properly (unlike Helvetica/Arial).
-         To swap it, change the family here and the <link> in partials/custom_head.html. */
-      --font-main: "Work Sans", ui-rounded, "Segoe UI", system-ui, -apple-system, sans-serif;
-      --font-secondary: Helvetica, Arial, system-ui, sans-serif;
+      /* Arial for headings and body alike. It ships with every OS, so nothing is
+         downloaded and there is no third-party font dependency. Liberation Sans is
+         the metric-compatible stand-in on Linux, where Arial isn't installed. */
+      --font-main: Arial, Helvetica, "Liberation Sans", sans-serif;
+      --font-secondary: Arial, Helvetica, "Liberation Sans", sans-serif;
       --font-scale: 1em;
 
       /* Light — soft sage-green paper + forest greens */
       --background-color: #e9f0df;
       --heading-color: #21402c;
+      --bold-color: #21402c;
       --text-color: #423f39;
       --link-color: #2f7a54;
       --visited-color: #5f7d5a;
@@ -47,6 +49,8 @@
   :root[data-theme="dark"] {
       --background-color: #161814;
       --heading-color: #cbd6c3;
+      /* Deeper and greener than the heading sage, so bold reads as emphasis. */
+      --bold-color: #a9c49a;
       --text-color: #d6d3ca;
       --link-color: #8fbf9f;
       --visited-color: #7ba888;
@@ -55,7 +59,7 @@
       --blockquote-color: #b8b5ac;
 
       --green-1: #a3bdb0;
-      --green-2: #86bcac;
+      --green-2: #86bcb9;
       --green-3: #6cbaa7;
       --green-4: #52b6a0;
   }
@@ -107,7 +111,22 @@
   }
 
   strong, b {
-      color: var(--heading-color);
+      color: var(--bold-color);
+  }
+
+  /* Keep a bullet block tucked under the line introducing it. Adjacent margins
+     collapse to the larger value, so the paragraph above has to shrink too --
+     dropping only the list's margin-top would change nothing. */
+  p:has(+ ul), p:has(+ ol) {
+      margin-bottom: 0.2em;
+  }
+
+  ul, ol {
+      margin-top: 0.2em;
+  }
+
+  li + li {
+      margin-top: 0.15em;
   }
 
   button {
@@ -148,7 +167,9 @@
   }
 
   footer {
+      margin-top: 40px;
       padding: 15px 0;
+      border-top: 1px dashed;
       text-align: center;
   }
 

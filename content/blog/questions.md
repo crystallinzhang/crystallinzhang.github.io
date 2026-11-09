@@ -59,7 +59,3 @@ Nowadays I am less interested in questions and more interested in critical thoug
   
 
 I invite your commentary. See Gavin Leech’s post [Ways we can fail to answer](https://www.gleech.org/barriers).
-
-<br>
-
----
